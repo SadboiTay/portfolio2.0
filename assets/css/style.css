@@ -1,17 +1,28 @@
 :root {
-    --color1: #191102;
-    --color2: #436436;
-    --color3: #B07156;
-    --color4: #BBD8B3;
-    --color5: #E8DBC5;
+    --color1: black;
+    --color2: #0f0f0f;
+    --color3: #4dff00;
+    --color4: #E01919;
+    --color5: #8913F8;
+    --color6: #FFFF00;
+    --color7: #1789fc;
+}
+
+body {
+    background-image: url("/assets/images/dark-triangles/dark-triangles.png");
+}
+
+.navbar {
+    background: var(--color2);
+    box-shadow: 0px 5px 10px black;
 }
 
 .hero {
-    width: 90%;
-    background: linear-gradient(to bottom right, var(--color5), var(--color4));
+    background: var(--color2);
     margin: 0 auto;
     min-height: 65vh;
-    box-shadow: 0px 5px 10px gray;
+    /* box-shadow: 0px 5px 10px gray; */
+    border-bottom-right-radius: 40%;
 }
 
 .upper {
@@ -36,7 +47,7 @@
 
 .mid h1 {
     color: rgba(0, 0, 0, 0);
-    -webkit-text-stroke-width: .5px;-webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: .5px;-webkit-text-stroke-color: var(--color6);
     font-size: 15vw;
     z-index: 1;
 }
@@ -81,9 +92,10 @@
     justify-content: center;
     align-items: center;
     min-height: 75vh;
-    /* display: none; */
+    width: 100%;
 }
 
 .headshot {
     width: 60%;
+    max-width: 300px;
 }
