@@ -19,6 +19,7 @@
 body {
     background-color: var(--color2);
     font-family: monospace, serif;
+    color: var(--color3);
 }
 
 nav {
@@ -57,10 +58,19 @@ nav {
     align-items: center;
     text-align: center;
     line-height: 1.5;
-    margin-top: 25vh;
-    height: 80vh;
+    min-height: 100vh;
     border-bottom: 1px dashed var(--color3);
     color: var(--color3);
+}
+
+.intro-text {
+    margin-top: 25vh;
+}
+
+.section-title {
+    padding: 10px;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .project-section {
@@ -68,8 +78,12 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
     font-family: inconsolata, monospace;
+    border-bottom: 1px dashed var(--color3);
+}
+
+.project-section h1 {
+    color: var(--color5);
 }
 
 .project-block {
@@ -88,4 +102,29 @@ nav {
     color: var(--color5);
     margin-bottom: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: inconsolata, monospace;
+    border-bottom: 1px dashed var(--color3);
+    color: var(--color6);
+}
+
+.about-text {
+    font-size: 1.2rem;
+    margin: 12px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: inconsolata, monospace;
+    border-bottom: 1px dashed var(--color3);
+    color: var(--color4);
 }
