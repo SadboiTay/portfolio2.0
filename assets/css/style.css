@@ -94,18 +94,22 @@ nav {
     color: var(--newPalette1);
 }
 
-.project-block {
+.project-card {
     border: 1px solid var(--newPalette1);
-    min-height: 20vh;
+    /* min-height: 20vh; */
     width: 90%;
     margin: 10px 0;
 }
 
-.project-block > * {
-    padding: 10px;
+.project-card > * {
+    margin: 10px;
 }
 
-.project-block a {
+.project-body p {
+    margin-top: 5px;
+}
+
+.project-card a {
     text-decoration: none;
     color: var(--newPalette1);
     margin-bottom: 50px;
