@@ -30,9 +30,12 @@ body {
 nav {
     background-color: var(--color1);
     height: 50px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    transition: top 0.3s;
 }
 
 .logo {
@@ -100,12 +103,6 @@ nav {
 
 .project-block > * {
     padding: 10px;
-}
-
-.project-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .project-block a {
