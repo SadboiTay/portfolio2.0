@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+html {
+    line-height: 1.4;
+}
+
 :root {
     --color1: black;
     --color2: #040404;
@@ -23,7 +27,7 @@
 
 body {
     background-color: var(--color2);
-    font-family: monospace, serif;
+    font-family: sans-serif;
     color: var(--color3);
 }
 
@@ -39,25 +43,30 @@ nav {
 }
 
 .logo {
-    padding: 20px;
+    margin: 2rem;
     color: var(--color3);
+    font-size: 1.3rem;
+}
+
+.logo h1 {
+    font-weight: 300;
 }
 
 .hamburger {
-    padding: 20px;
+    margin: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 40px;
+    width: 2.5rem;
 }
 
 .burger {
     background-color: var(--color3);
-    height: 3px;
+    height: 2px;
     width: 100%;
-    margin: 4px;
+    margin: .35rem;
 }
 
 .jumbotron {
@@ -73,12 +82,13 @@ nav {
 
 .intro-text {
     margin-top: 25vh;
+    padding: .5rem;
 }
 
 .section-title {
     padding: 10px;
     font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: inconsolata, monospace;
 }
 
 .project-section {
@@ -86,8 +96,9 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: inconsolata, monospace;
+    font-family: open sans,sans-serif;
     border-bottom: 1px dashed var(--newPalette1);
+    color: white;
 }
 
 .project-section h1 {
@@ -96,24 +107,35 @@ nav {
 
 .project-card {
     border: 1px solid var(--newPalette1);
-    /* min-height: 20vh; */
     width: 90%;
     margin: 10px 0;
 }
 
+.project-title {
+    font-weight: 500;
+    letter-spacing: .22rem;
+    font-size: 1.3rem;
+}
+
 .project-card > * {
-    margin: 10px;
+    margin: 1rem;
 }
 
 .project-body p {
-    margin-top: 5px;
+    margin-top: .5rem;
 }
 
 .project-card a {
     text-decoration: none;
     color: var(--newPalette1);
-    margin-bottom: 50px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: sans-serif;
+    transition: all .3s ease-out;
+    text-transform: uppercase;
+    font-size: .9rem;
+}
+
+.project-card a:hover {
+    color: var(--color3);
 }
 
 .about-section {
@@ -121,7 +143,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: inconsolata, monospace;
     border-bottom: 1px dashed var(--color3);
     color: var(--newPalette2);
 }
@@ -136,7 +157,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: inconsolata, monospace;
     border-bottom: 1px dashed var(--color3);
     color: var(--newPalette3);
 }
