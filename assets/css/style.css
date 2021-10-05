@@ -92,6 +92,7 @@ nav {
     padding: 10px;
     font-size: 2rem;
     font-family: inconsolata, monospace;
+    font-weight: 550;
 }
 
 .project-section {
@@ -214,10 +215,6 @@ nav {
     margin: 1.5rem;
 }
 
-.about-text1 span {
-    color: var(--color5);
-}
-
 .about-text2 {
     color: var(--color3);
 }
@@ -227,6 +224,8 @@ nav {
 }
 
 .about-text4 {
+    font-weight: 200;
+    font-family: open sans, sans serif;
 }
 
 .contact-section {
