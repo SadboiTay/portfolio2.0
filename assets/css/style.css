@@ -117,7 +117,8 @@ nav {
 .project-title {
     font-weight: 500;
     letter-spacing: .15rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    font-family: inconsolata, monospace;
 }
 
 .project-card>* {
@@ -126,9 +127,23 @@ nav {
 
 .project-body p {
     margin-top: .5rem;
+    font-size: .85rem;
+    letter-spacing: .03rem;
+    line-height: 1.5;
 }
 
-.project-card a {
+#prashant-link {
+    text-decoration: none;
+    color: var(--newPalette1);
+    transition: all .3s ease-out;
+}
+
+#prashant-link:hover {
+    text-decoration: none;
+    color: var(--color3);
+}
+
+.project-footer a {
     text-decoration: none;
     color: var(--newPalette1);
     font-family: sans-serif;
@@ -148,11 +163,70 @@ nav {
     align-items: center;
     border-bottom: 1px dashed var(--color3);
     color: var(--newPalette2);
+    min-height: 90vh;
 }
 
-.about-text {
-    font-size: 1.2rem;
-    margin: 12px;
+.tay-container {
+    margin-top: 4rem;
+    width: 100%;
+    /* background-color: rosybrown; */
+    display: flex;
+    justify-content: center;
+}
+
+.blanket {
+    /* background: sandybrown; */
+    width: 90%;
+    display: flex;
+}
+
+.socials-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    padding-right: 2rem;
+    /* background: chocolate; */
+}
+
+.socials-box img {
+    width: 20%;
+    margin-bottom: 1.5rem;
+}
+
+#tay-cutout {
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-text2,
+.about-text3,
+.about-text4 {
+    margin: 0 1.5rem 1rem 1.5rem;
+}
+
+.about-text1 {
+    font-family: open sans;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin: 1.5rem;
+}
+
+.about-text1 span {
+    color: var(--color5);
+}
+
+.about-text2 {
+    color: var(--color3);
+}
+
+.about-text3 {
+    color: var(--color3);
+}
+
+.about-text4 {
 }
 
 .contact-section {
