@@ -1,5 +1,4 @@
 @import 'https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans:300i,400,700';
-
 * {
     padding: 0;
     margin: 0;
@@ -18,7 +17,6 @@ html {
     --color6: #8913F8;
     --color7: #FFFF00;
     --color8: #1789fc;
-
     --newPalette1: #DE7254;
     --newPalette2: #2FC6A8;
     --newPalette3: #AE1E4E;
@@ -28,7 +26,7 @@ html {
 body {
     background-color: var(--color2);
     font-family: sans-serif;
-    color: var(--color3);
+    color: white;
 }
 
 nav {
@@ -77,12 +75,17 @@ nav {
     line-height: 1.5;
     min-height: 100vh;
     border-bottom: 1px dashed var(--color3);
-    color: var(--color3);
 }
 
 .intro-text {
-    margin-top: 25vh;
+    margin-top: 35vh;
     padding: .5rem;
+}
+
+#icosa {
+    position: absolute;
+    top: 30vh;
+    left: 3vh;
 }
 
 .section-title {
@@ -96,7 +99,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: open sans,sans-serif;
+    font-family: open sans, sans-serif;
     border-bottom: 1px dashed var(--newPalette1);
     color: white;
 }
@@ -109,15 +112,16 @@ nav {
     border: 1px solid var(--newPalette1);
     width: 90%;
     margin: 10px 0;
+    position: relative;
 }
 
 .project-title {
     font-weight: 500;
-    letter-spacing: .22rem;
+    letter-spacing: .15rem;
     font-size: 1.3rem;
 }
 
-.project-card > * {
+.project-card>* {
     margin: 1rem;
 }
 
@@ -136,6 +140,22 @@ nav {
 
 .project-card a:hover {
     color: var(--color3);
+}
+
+#weather-dash::after {
+    content: "";
+    /* background-color: var(--color3); */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid var(--color3);
 }
 
 .about-section {
