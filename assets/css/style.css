@@ -215,10 +215,7 @@ nav {
     margin: 1.5rem;
 }
 
-.about-text2 {
-    color: var(--color3);
-}
-
+.about-text2,
 .about-text3 {
     color: var(--color3);
 }
@@ -228,11 +225,39 @@ nav {
     font-family: open sans, sans serif;
 }
 
-.contact-section {
+footer {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+}
+
+.contact-section {
     border-bottom: 1px dashed var(--color3);
     color: var(--newPalette3);
+    height: 50%;
+}
+
+.links {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.links::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200vw;
+    height: 200vw;
+    margin-left: -100vw;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: var(--newPalette4);
 }
