@@ -50,22 +50,53 @@ nav {
     font-weight: 300;
 }
 
-.hamburger {
+.menu-btn {
+    position: relative;
     margin: 2rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 2.5rem;
+    width: 3rem;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    /* border: 1px solid white; */
 }
 
-.patty {
+.menu-btn_burger {
     background-color: var(--color3);
     height: 2px;
     width: 100%;
-    margin: .35rem;
+    transition: all .5s ease-in-out;
 }
+
+#burger-top,
+#burger-bot {
+    position: absolute;
+}
+
+#burger-top {
+    transform: translateY(-13px);
+}
+
+#burger-bot {
+    transform: translateY(13px);
+}
+
+/* hamburger animation */
+.menu-btn.open #burger-mid {
+    transform: rotate(90deg) translateY(-1.5rem);
+    width: 80%;
+}
+
+.menu-btn.open #burger-top {
+    transform: rotate(23deg) translateY(7.5px) translateX(5px);
+}
+
+.menu-btn.open #burger-bot {
+    transform: rotate(-23deg) translateY(-7.5px) translateX(5px);
+}
+/* END hamburger animation */
 
 .jumbotron {
     display: flex;

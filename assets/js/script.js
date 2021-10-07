@@ -1,4 +1,18 @@
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+
+// click menu button listener
+menuBtn.addEventListener('click', () => {
+    if(!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true;
+    } else {
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+    }
+})
+
+// navbar scroll hide
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
