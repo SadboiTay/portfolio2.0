@@ -43,6 +43,7 @@ nav {
     align-items: center;
     position: fixed;
     transition: top 0.3s;
+    z-index: 99;
 }
 
 .logo {
@@ -102,8 +103,21 @@ nav {
 }
 /* END hamburger animation */
 
-.menu-page {
-    position: absolute;
+#menu-slider1 {
+    background: var(--color3);
+}
+#menu-slider2 {
+    background: var(--newPalette1);
+}
+#menu-slider3 {
+    background: var(--newPalette2);
+}
+#menu-slider4 {
+    background: var(--newPalette3);
+}
+
+.menu-page, .menu-page-slider {
+    position: fixed;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -112,7 +126,6 @@ nav {
     background: var(--color1);
     top: 50px;
     left: 0;
-    /* padding-left: 20%; */
     transform: translateX(100vw);
 }
 
