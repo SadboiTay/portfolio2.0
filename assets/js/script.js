@@ -1,58 +1,73 @@
-const menuBtn = document.querySelector('.menu-btn');
 const body = document.querySelector('body');
 let menuOpen = false;
-var menuPageTL = gsap.timeline();
 
 // create menu page animation timeline
-const animateMenuPage = () => {
-    menuPageTL.to('main', {
-        duration: 1,
-        x: '-100vw',
-        ease: 'power4'
-    })
+var menuPageTL = gsap.timeline({ paused: true, reversed: true });
+menuPageTL.to('main', {
+    duration: 0.5,
+    x: '-100vw',
+    ease: 'back.in'
+})
     .to('.menu-page-slider', {
         stagger: 0.2,
         duration: 1,
         x: 0,
-        ease: "power4"
-    }, "<")
+        ease: 'back.in'
+    }, "<-0.3")
     .to('.menu-page', {
-        duration: 1,
+        duration: 0.8,
         x: 0,
-        ease: "power4"
+        ease: 'back.in'
     }, "<1")
+    .from('.menu-page li', {
+        stagger: 0.2,
+        duration: 0.3,
+        opacity: 0,
+        x: '200px',
+        scale: 0,
+        ease: 'back'
+    }, '>-0.2')
+
+const animateMenuPage = () => {
+    // ternary operator - if reversed, play; else reverse
+    menuPageTL.reversed() ? menuPageTL.play() : menuPageTL.reverse();
 }
 
 // click menu button listener
-menuBtn.addEventListener('click', () => {
+$('.menu-btn').click(() => {
     // create timeline
 
-    if(!menuOpen) {
+    if (!menuOpen) {
         // animate menu btn
-        menuBtn.classList.toggle('open');
-
-        // animate menu page in
-        animateMenuPage();
-
-        // or restart it
-        menuPageTL.restart();
+        $('.menu-btn').toggleClass('open');
 
         // set y overflow to hidden
-        body.classList.toggle('hidden');
+        $('body').toggleClass('hidden');
 
         menuOpen = true;
     } else {
         // animate menu btn
-        menuBtn.classList.toggle('open');
-
-        // animate page out
-        menuPageTL.reverse();
+        $('.menu-btn').toggleClass('open');
 
         // toggle y overflow
-        body.classList.toggle('hidden');
+        $('body').toggleClass('hidden');
 
         menuOpen = false;
     }
+
+
+    // animate page out
+    animateMenuPage();
+})
+
+$('.nav-links').click(() => {
+    // animate menu btn
+    $('.menu-btn').toggleClass('open');
+
+    animateMenuPage();
+
+    // toggle y overflow
+    $('body').toggleClass('hidden');
 })
 
 // navbar scroll hide
