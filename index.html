@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Document</title>
 </head>
+
 <body>
   <nav>
     <div class="logo">
@@ -14,8 +16,8 @@
     </div>
     <div class="menu-btn">
       <div id="burger-top" class="menu-btn_burger"></div>
-      <div id="burger-mid"class="menu-btn_burger"></div>
-      <div id="burger-bot"class="menu-btn_burger"></div>
+      <div id="burger-mid" class="menu-btn_burger"></div>
+      <div id="burger-bot" class="menu-btn_burger"></div>
     </div>
   </nav>
 
@@ -42,79 +44,116 @@
       <h1 class="intro-text">Hey! I'm Taylor. I build interactive websites for humans.</h1>
       <img id="icosa" src="/assets/images/icosahedron-muted-350.png" alt="icosahedron-muted-350">
     </section>
-  
+
     <section id="projects" class="project-section">
 
       <h1 class="section-title">Projects</h1>
 
       <div class="project-card">
-        <div class="project-body">
-          <h2 class="project-title">My Portfolio Website</h2>
-          <p>A Responsive website that utilizes the power of Greensock (GSAP) & ScrollMagic powered animations, largely inspired by the beautiful <a id="prashant-link" href="https://prashantsani.com/" target="_blank">portfolio design</a> of Prashant Sani.</p>
+        <div class="project-content">
+          <div class="project-body">
+            <h2 class="project-title">My Portfolio Website</h2>
+            <p>A Responsive website that utilizes the power of Greensock (GSAP) & ScrollMagic powered animations,
+              largely inspired by the beautiful <a id="prashant-link" href="https://prashantsani.com/"
+                target="_blank">portfolio design</a> of Prashant Sani.</p>
+          </div>
+          <div class="project-footer">
+            <a href="#">Case Study</a> // <a href="https://github.com/SadboiTay/portfolio2.0" target="_blank">GitHub
+              Repo</a>
+          </div>
         </div>
-        <div class="project-footer">
-          <a href="#">Case Study</a> // <a href="https://github.com/SadboiTay/portfolio2.0" target="_blank">GitHub Repo</a>
-        </div>
-      </div>
-
-      <div id="weather-dash" class="project-card">
-        <div class="project-body">
-          <h2 class="project-title">Weather Dashboard</h2>
-          <p>A one-page site built with jQuery and Bootstrap that uses the OpenWeather API to retrieve forecast data in specific cities. Local storage saves a search history.</p>
-        </div>
-        <div class="project-footer">
-          <a href="https://sadboitay.github.io/weather-dashboard/" target="_blank">Visit Website</a> // <a href="https://github.com/SadboiTay/weather-dashboard" target="_blank">GitHub Repo</a>
-        </div>
+        <div class="project-revealer"></div>
       </div>
 
       <div class="project-card">
-        <div class="project-body">
-          <h2 class="project-title">Team Profile Generator</h2>
-          <p>Quickly generate a website displaying your team of employees through a command line app built with Node.js and inquirer npm. Created with a focus on object oriented programming and test driven development.</p>
+        <div class="project-content">
+          <div class="project-body">
+            <h2 class="project-title">Weather Dashboard</h2>
+            <p>A one-page site built with jQuery and Bootstrap that uses the OpenWeather API to retrieve forecast data
+              in specific cities. Local storage saves a search history.</p>
+          </div>
+          <div class="project-footer">
+            <a href="https://sadboitay.github.io/weather-dashboard/" target="_blank">Visit Website</a> // <a
+              href="https://github.com/SadboiTay/weather-dashboard" target="_blank">GitHub Repo</a>
+          </div>
         </div>
-        <div class="project-footer">
-          <a href="#">Video Guide</a> // <a href="https://github.com/SadboiTay/team-profile-generator" target="_blank">GitHub Repo</a>
-        </div>
+        <div class="project-revealer"></div>
       </div>
 
       <div class="project-card">
-        <div class="project-body">
-          <h2 class="project-title">Work Day Scheduler</h2>
-          <p>A simple browser calendar application that allows a user to save events in local storage for each hour of the day.</p>
+        <div class="project-content">
+          <div class="project-body">
+            <h2 class="project-title">Team Profile Generator</h2>
+            <p>Quickly generate a website displaying your team of employees through a command line app built with
+              Node.js and inquirer npm. Created with a focus on object oriented programming and test driven development.
+            </p>
+          </div>
+          <div class="project-footer">
+            <a href="#">Video Guide</a> // <a href="https://github.com/SadboiTay/team-profile-generator"
+              target="_blank">GitHub Repo</a>
+          </div>
         </div>
-        <div class="project-footer">
-          <a href="https://sadboitay.github.io/work-day-scheduler/" target="_blank">Visit Website</a> // <a href="https://github.com/SadboiTay/work-day-scheduler" target="_blank">GitHub Repo</a>
-        </div>
+        <div class="project-revealer"></div>
       </div>
 
       <div class="project-card">
-        <div class="project-body">
-          <h2 class="project-title">Note Taker</h2>
-          <p>Full stack application  that can be used to write and save notes via a deployed server. I used Express.js to build the server and connect it to the existing front-end.</p>
+        <div class="project-content">
+          <div class="project-body">
+            <h2 class="project-title">Work Day Scheduler</h2>
+            <p>A simple browser calendar application that allows a user to save events in local storage for each hour of
+              the day.</p>
+          </div>
+          <div class="project-footer">
+            <a href="https://sadboitay.github.io/work-day-scheduler/" target="_blank">Visit Website</a> // <a
+              href="https://github.com/SadboiTay/work-day-scheduler" target="_blank">GitHub Repo</a>
+          </div>
         </div>
-        <div class="project-footer">
-          <a href="https://calm-badlands-94002.herokuapp.com/" target="_blank">Visit Website</a> // <a href="https://github.com/SadboiTay/note-taker" target="_blank">GitHub Repo</a>
-        </div>
+        <div class="project-revealer"></div>
       </div>
 
       <div class="project-card">
-        <div class="project-body">
-          <h2 class="project-title">README Generator</h2>
-          <p>A Node.js command line app that gathers prompted information from the user to dynamically generate a professional README document, letting developers focus more on their code.</p>
+        <div class="project-content">
+          <div class="project-body">
+            <h2 class="project-title">Note Taker</h2>
+            <p>Full stack application that can be used to write and save notes via a deployed server. I used Express.js
+              to build the server and connect it to the existing front-end.</p>
+          </div>
+          <div class="project-footer">
+            <a href="https://calm-badlands-94002.herokuapp.com/" target="_blank">Visit Website</a> // <a
+              href="https://github.com/SadboiTay/note-taker" target="_blank">GitHub Repo</a>
+          </div>
         </div>
-        <div class="project-footer">
-          <a href="#">Video Guide</a> // <a href="https://github.com/SadboiTay/Professional-README-Generator" target="_blank">GitHub Repo</a>
-        </div>
+        <div class="project-revealer"></div>
       </div>
 
       <div class="project-card">
-        <div class="project-body">
-          <h2 class="project-title">Code Quiz</Q></h2>
-          <p>Test your knowledgee with a timed JavaScript quiz. Wrong answers dock your time and decrease your score.</p>
+        <div class="project-content">
+          <div class="project-body">
+            <h2 class="project-title">README Generator</h2>
+            <p>A Node.js command line app that gathers prompted information from the user to dynamically generate a
+              professional README document, letting developers focus more on their code.</p>
+          </div>
+          <div class="project-footer">
+            <a href="#">Video Guide</a> // <a href="https://github.com/SadboiTay/Professional-README-Generator"
+              target="_blank">GitHub Repo</a>
+          </div>
         </div>
-        <div class="project-footer">
-          <a href="https://sadboitay.github.io/code-quiz/" target="_blank">Visit Website</a> // <a href="https://github.com/SadboiTay/code-quiz" target="_blank">GitHub Repo</a>
+        <div class="project-revealer"></div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-content">
+          <div class="project-body">
+            <h2 class="project-title">Code Quiz</Q></h2>
+            <p>Test your knowledgee with a timed JavaScript quiz. Wrong answers dock your time and decrease your score.
+            </p>
+          </div>
+          <div class="project-footer">
+            <a href="https://sadboitay.github.io/code-quiz/" target="_blank">Visit Website</a> // <a
+              href="https://github.com/SadboiTay/code-quiz" target="_blank">GitHub Repo</a>
+          </div>
         </div>
+        <div class="project-revealer"></div>
       </div>
 
     </section>
@@ -134,16 +173,20 @@
         </div>
       </div>
       <div class="about-text1">
-        I'm a full stack web developer and recent graduate from the Universty of Utah's coding bootcamp. My place in the world seems to be at the junction creativity and logic.
+        I'm a full stack web developer and recent graduate from the Universty of Utah's coding bootcamp. My place in the
+        world seems to be at the junction creativity and logic.
       </div>
       <div class="about-text2">
-        Whether it's breathing new life into legacy content or building applications from scratch, I tackle every project with eagerness and enthusiasm.
+        Whether it's breathing new life into legacy content or building applications from scratch, I tackle every
+        project with eagerness and enthusiasm.
       </div>
       <div class="about-text3">
-        I am proficient with a range of front and back-end languages, tools and frameworks like HTML5, CSS3, JavaScript, jQuery, Node.js, Bootstrap, SQL, Express.js, MongoDB, and React.   
+        I am proficient with a range of front and back-end languages, tools and frameworks like HTML5, CSS3, JavaScript,
+        jQuery, Node.js, Bootstrap, SQL, Express.js, MongoDB, and React.
       </div>
       <div class="about-text4">
-        Outside the world of programming you might find me studying my favorite chess openings, entertaining my two crazy doggos, traveling with my wife, or getting giddy over a large plate of sushi.
+        Outside the world of programming you might find me studying my favorite chess openings, entertaining my two
+        crazy doggos, traveling with my wife, or getting giddy over a large plate of sushi.
       </div>
     </section>
 
@@ -160,8 +203,14 @@
     </footer>
   </main>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

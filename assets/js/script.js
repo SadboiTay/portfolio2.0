@@ -1,5 +1,16 @@
-const body = document.querySelector('body');
 let menuOpen = false;
+
+// navbar scroll hide
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function () {
+//     var currentScrollPos = window.pageYOffset;
+//     if (prevScrollpos > currentScrollPos) {
+//         document.querySelector("nav").style.top = "0";
+//     } else {
+//         document.querySelector("nav").style.top = "-50px";
+//     }
+//     prevScrollpos = currentScrollPos;
+// }
 
 // create menu page animation timeline
 var menuPageTL = gsap.timeline({ paused: true, reversed: true });
@@ -70,14 +81,27 @@ $('.nav-links').click(() => {
     $('body').toggleClass('hidden');
 })
 
-// navbar scroll hide
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function () {
-//     var currentScrollPos = window.pageYOffset;
-//     if (prevScrollpos > currentScrollPos) {
-//         document.querySelector("nav").style.top = "0";
-//     } else {
-//         document.querySelector("nav").style.top = "-50px";
-//     }
-//     prevScrollpos = currentScrollPos;
-// }
+// scrollmagic project revealer
+const controller = new ScrollMagic.Controller();
+let projectRevealerElements = document.getElementsByClassName('project-revealer');
+let projectContentElements = document.getElementsByClassName('project-content')
+for (let i = 0; i<projectRevealerElements.length; i++) {
+    new ScrollMagic.Scene({
+        triggerElement: projectRevealerElements[i],
+        triggerHook: 0.9
+    })
+    .setTween(gsap.timeline()
+        .to(projectRevealerElements[i], {
+            duration: 1,
+            x: '-100%',
+            ease: 'power2'
+        })
+        .to(projectContentElements[i], {
+            duration: 1,
+            y: '0%',
+            opacity: 1,
+            ease: 'power4'
+        }, "<+0.6"))
+    // .addIndicators()
+    .addTo(controller);
+}

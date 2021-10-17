@@ -1,0 +1,19 @@
+{
+  "name": "portfolio2.0",
+  "version": "1.0.0",
+  "description": "A ground up, mobile-first redesign of my professional portfolio. This time featuring user interactions and smooth animations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SadboiTay/portfolio2.0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SadboiTay/portfolio2.0/issues"
+  },
+  "homepage": "https://github.com/SadboiTay/portfolio2.0#readme" 
+}
