@@ -9,22 +9,16 @@ html {
 }
 
 :root {
-    --color1: black;
-    --color2: #040404;
-    --color3: #E7DBB3;
-    --color4: #4dff00;
-    --color5: #E01919;
-    --color6: #8913F8;
-    --color7: #FFFF00;
-    --color8: #1789fc;
-    --newPalette1: #DE7254;
-    --newPalette2: #2FC6A8;
-    --newPalette3: #AE1E4E;
-    --newPalette4: #011638;
+    --PaletteGrey: #070707;
+    --Palette1: #E7DBB3;
+    --Palette2: #DE7254;
+    --Palette3: #2FC6A8;
+    --Palette4: #AE1E4E;
+    --Palette5: #011638;
 }
 
 body {
-    background-color: var(--color2);
+    background-color: var(--PaletteGrey);
     font-family: sans-serif;
     color: white;
     overflow-x: hidden;
@@ -35,7 +29,7 @@ body.hidden {
 }
 
 nav {
-    background-color: var(--color1);
+    background-color: black;
     height: 50px;
     width: 100vw;
     display: flex;
@@ -48,7 +42,7 @@ nav {
 
 .logo {
     margin: 2rem;
-    color: var(--color3);
+    color: var(--Palette1);
     font-size: 1.3rem;
 }
 
@@ -69,7 +63,7 @@ nav {
 }
 
 .menu-btn_burger {
-    background-color: var(--color3);
+    background-color: var(--Palette1);
     height: 2px;
     width: 100%;
     transition: all 1.5s ease-in-out;
@@ -78,15 +72,15 @@ nav {
 
 @keyframes color-wheel {
     25% {
-        background-color: var(--newPalette1);
+        background-color: var(--Palette2);
     }
 
     50% {
-        background-color: var(--newPalette2);
+        background-color: var(--Palette3);
     }
 
     75% {
-        background-color: var(--newPalette3);
+        background-color: var(--Palette4);
     }
 }
 
@@ -119,16 +113,16 @@ nav {
 /* END hamburger animation */
 
 #menu-slider1 {
-    background: var(--color3);
+    background: var(--Palette1);
 }
 #menu-slider2 {
-    background: var(--newPalette1);
+    background: var(--Palette2);
 }
 #menu-slider3 {
-    background: var(--newPalette2);
+    background: var(--Palette3);
 }
 #menu-slider4 {
-    background: var(--newPalette3);
+    background: var(--Palette4);
 }
 
 .menu-page, .menu-page-slider {
@@ -139,7 +133,7 @@ nav {
     flex-direction: column;
     height: 100vh;
     width: 100vw;
-    background: var(--color1);
+    background: black;
     top: 50px;
     left: 0;
     transform: translateX(100vw);
@@ -171,7 +165,7 @@ nav {
     text-align: center;
     line-height: 1.5;
     min-height: 100vh;
-    border-bottom: 1px dashed var(--color3);
+    border-bottom: 1px dashed var(--Palette1);
 }
 
 .intro-text {
@@ -199,17 +193,17 @@ nav {
     justify-content: center;
     align-items: center;
     font-family: open sans, sans-serif;
-    border-bottom: 1px dashed var(--newPalette1);
+    border-bottom: 1px dashed var(--Palette2);
     color: white;
     padding-top: 10vh;
 }
 
 .project-section h1 {
-    color: var(--newPalette1);
+    color: var(--Palette2);
 }
 
 .project-card {
-    border: 1px solid var(--newPalette1);
+    border: 1px solid var(--Palette2);
     width: 90%;
     margin: 10px 0;
     position: relative;
@@ -217,7 +211,7 @@ nav {
 }
 
 .project-revealer {
-    background-color: var(--newPalette1);
+    background-color: var(--Palette2);
     position: absolute;
     top: 0;
     left: 0;
@@ -253,18 +247,18 @@ nav {
 
 #prashant-link {
     text-decoration: none;
-    color: var(--newPalette1);
+    color: var(--Palette2);
     transition: all .3s ease-out;
 }
 
 #prashant-link:hover {
     text-decoration: none;
-    color: var(--color3);
+    color: var(--Palette1);
 }
 
 .project-footer a {
     text-decoration: none;
-    color: var(--newPalette1);
+    color: var(--Palette2);
     font-family: sans-serif;
     transition: all .3s ease-out;
     text-transform: uppercase;
@@ -272,7 +266,7 @@ nav {
 }
 
 .project-card a:hover {
-    color: var(--color3);
+    color: var(--Palette1);
 }
 
 .about-section {
@@ -280,8 +274,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px dashed var(--color3);
-    color: var(--newPalette2);
+    border-bottom: 1px dashed var(--Palette1);
+    color: var(--Palette3);
     min-height: 90vh;
 }
 
@@ -313,6 +307,11 @@ nav {
     margin-bottom: 1.5rem;
 }
 
+.socials-svg {
+    width: 20%;
+    margin-bottom: 1.5rem;
+}
+
 #tay-cutout {
     width: 100%;
     overflow: hidden;
@@ -335,7 +334,7 @@ nav {
 
 .about-text2,
 .about-text3 {
-    color: var(--color3);
+    color: var(--Palette1);
 }
 
 .about-text4 {
@@ -351,8 +350,8 @@ footer {
 }
 
 .contact-section {
-    border-bottom: 1px dashed var(--color3);
-    color: var(--newPalette3);
+    border-bottom: 1px dashed var(--Palette1);
+    color: var(--Palette4);
     height: 50%;
 }
 
@@ -377,5 +376,5 @@ footer {
     margin-left: -100vw;
     z-index: -1;
     border-radius: 50%;
-    background-color: var(--newPalette4);
+    background-color: var(--Palette5);
 }
