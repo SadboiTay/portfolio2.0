@@ -146,18 +146,22 @@ nav {
 }
 
 .menu-page ul {
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
-.menu-page li {
-    margin: 1rem;
+.nav-links {
     list-style: none;
+    font-family: inconsolata, monospace;
+    margin: 0 auto;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
 }
 
 .menu-page li a {
     text-decoration: none;
     color: inherit;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .jumbotron {
@@ -219,7 +223,8 @@ nav {
     left: 0;
     bottom: 0;
     right: 0;
-    -webkit-backface-visibility: hidden
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .project-title {

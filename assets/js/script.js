@@ -31,7 +31,7 @@ menuPageTL.to('main', {
         ease: 'back.in'
     }, "<1")
     .from('.menu-page li', {
-        stagger: 0.2,
+        stagger: 0.1,
         duration: 0.3,
         opacity: 0,
         x: '200px',
