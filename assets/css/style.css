@@ -185,6 +185,7 @@ nav {
     font-size: 2rem;
     font-family: inconsolata, monospace;
     font-weight: 550;
+    text-transform: uppercase;
 }
 
 .project-section {
@@ -280,13 +281,14 @@ nav {
     min-height: 70vh;
 }
 
-#about-title {
-    margin: 0 auto;
+.about-title-container {
+    display: flex;
+    justify-content: center;
 }
 
-.tay-portal {
+.portal-scene {
     position: relative;
-    min-height: 70vh;
+    height: 77vh;
 }
 
 .tay-img-box {
@@ -305,18 +307,69 @@ nav {
     width: 100%;
 }
 
+#github-svg {
+    position: absolute;
+    left: 15%;
+    bottom: 50%;
+    width: 14%;
+    animation: hover 1.6s forwards infinite ease-in-out;
+}
+
+#icosa1 {
+    position: absolute;
+    left: 28%;
+    bottom: 68%;
+    width: 8%;
+    animation: hover 1.2s forwards infinite ease-in-out;
+    z-index: -1;
+}
+
+#icosa2 {
+    position: absolute;
+    left: 36%;
+    bottom: 22%;
+    width: 6%;
+    transform: rotateZ(-5deg);
+    animation: hover 1.3s forwards infinite ease-in-out;
+    z-index: -1;
+}
+
+#icosa3 {
+    position: absolute;
+    left: 66%;
+    bottom: 48%;
+    width: 6%;
+    transform: rotateZ(5deg);
+    animation: hover 1.4s forwards infinite ease-in-out;
+}
+
+#linkedin-svg {
+    position: absolute;
+    left: 55%;
+    bottom: 35%;
+    width: 15%;
+    animation: hover 1.7s forwards infinite ease-in-out;
+}
+
+#spotify-svg {
+    position: absolute;
+    left: 72%;
+    bottom: 65%;
+    width: 10%;
+    animation: hover 1.3s forwards infinite ease-in-out;
+}
+
 .triangle-portal {
     position: absolute;
     bottom: -10%;
     left: 2.5%;
-    z-index: -1;
     transform: rotateX(80deg);
     animation: spin 21s forwards infinite linear;
     transform-origin: center 62%;
     transform-box: fill-box;
     stroke-width: 25px;
     width: 100%;
-    /* border: 2px solid red; */
+    z-index: -1;
 }
 
 @keyframes spin {
@@ -325,16 +378,7 @@ nav {
     }
 }
 
-.socials-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background: chocolate; */
-}
-
 .socials-svg {
-    width: 20%;
-    margin-bottom: 1.5rem;
     fill: var(--Palette1);
     transition: all .27s ease;
 }
@@ -343,12 +387,8 @@ nav {
     fill: var(--Palette4);
 }
 
-#icosahedron-svg {
+.icosahedron-svg {
     stroke: var(--Palette3);
-}
-
-#icosahedron-svg:hover {
-    stroke: var(--Palette4);
 }
 
 .about-text2,
