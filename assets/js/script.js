@@ -101,7 +101,7 @@ for (let i = 0; i<projectRevealerElements.length; i++) {
             y: '0%',
             opacity: 1,
             ease: 'power4'
-        }, "<+0.6"))
+        }, "<+0.5"))
     // .addIndicators()
     .addTo(controller);
 }
