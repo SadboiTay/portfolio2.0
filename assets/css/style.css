@@ -292,7 +292,7 @@ nav {
 }
 
 .tay-img-box {
-    width: 60%;
+    width: 30vh;
     margin: 0 auto;
     animation: hover 1.5s forwards infinite ease-in-out;
 }
@@ -311,7 +311,7 @@ nav {
     position: absolute;
     left: 15%;
     bottom: 50%;
-    width: 14%;
+    width: 7vh;
     animation: hover 1.6s forwards infinite ease-in-out;
 }
 
@@ -319,7 +319,7 @@ nav {
     position: absolute;
     left: 28%;
     bottom: 68%;
-    width: 8%;
+    width: 4vh;
     animation: hover 1.2s forwards infinite ease-in-out;
     z-index: -1;
 }
@@ -328,7 +328,7 @@ nav {
     position: absolute;
     left: 36%;
     bottom: 22%;
-    width: 6%;
+    width: 3vh;
     transform: rotateZ(-5deg);
     animation: hover 1.3s forwards infinite ease-in-out;
     z-index: -1;
@@ -338,7 +338,7 @@ nav {
     position: absolute;
     left: 66%;
     bottom: 48%;
-    width: 6%;
+    width: 3.3vh;
     transform: rotateZ(5deg);
     animation: hover 1.4s forwards infinite ease-in-out;
 }
@@ -347,7 +347,7 @@ nav {
     position: absolute;
     left: 55%;
     bottom: 35%;
-    width: 15%;
+    width: 8vh;
     animation: hover 1.7s forwards infinite ease-in-out;
 }
 
@@ -355,7 +355,7 @@ nav {
     position: absolute;
     left: 72%;
     bottom: 65%;
-    width: 10%;
+    width: 4.5vh;
     animation: hover 1.3s forwards infinite ease-in-out;
 }
 
