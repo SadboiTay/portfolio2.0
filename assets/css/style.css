@@ -174,11 +174,9 @@ nav {
     padding: .5rem;
 }
 
-#icosa {
-    position: absolute;
-    z-index: -1;
-    top: 30vh;
-    left: 3vh;
+#icosaTEST {
+    width: 50%;
+    animation: spin 2s linear forwards infinite;
 }
 
 .section-title {
@@ -379,7 +377,7 @@ nav {
 
 @keyframes spin {
     to {
-        transform: rotateX(80deg) rotateZ(360deg);
+        transform: rotateZ(360deg);
     }
 }
 
