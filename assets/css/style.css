@@ -75,18 +75,15 @@ nav {
     25% {
         background-color: var(--Palette2);
     }
-
     50% {
         background-color: var(--Palette3);
     }
-
     75% {
         background-color: var(--Palette4);
     }
 }
 
-#burger-top,
-#burger-bot {
+#burger-top, #burger-bot {
     position: absolute;
 }
 
@@ -99,6 +96,7 @@ nav {
 }
 
 /* hamburger animation */
+
 .menu-btn.open #burger-mid {
     transform: rotate(90deg) translateY(-1.5rem);
     width: 80%;
@@ -111,17 +109,21 @@ nav {
 .menu-btn.open #burger-bot {
     transform: rotate(-23deg) translateY(-7.5px) translateX(5px);
 }
+
 /* END hamburger animation */
 
 #menu-slider1 {
     background: var(--Palette1);
 }
+
 #menu-slider2 {
     background: var(--Palette2);
 }
+
 #menu-slider3 {
     background: var(--Palette3);
 }
+
 #menu-slider4 {
     background: var(--Palette4);
 }
@@ -177,7 +179,7 @@ nav {
 #icosaTEST {
     width: 50%;
     animation: spin 2s linear forwards infinite;
-    stroke: hotpink;
+    stroke: lime;
 }
 
 .section-title {
@@ -382,6 +384,10 @@ nav {
     }
 }
 
+svg {
+    shape-rendering: optimizeSpeed;
+}
+
 @keyframes spin {
     to {
         -webkit-transform: rotateX(80deg) rotateZ(360deg);
@@ -402,9 +408,7 @@ nav {
     stroke: var(--Palette3);
 }
 
-.about-text2,
-.about-text3,
-.about-text4 {
+.about-text2, .about-text3, .about-text4 {
     margin: 0 1.5rem 1rem 1.5rem;
 }
 
@@ -417,8 +421,7 @@ nav {
     margin: 1.5rem;
 }
 
-.about-text2,
-.about-text3 {
+.about-text2, .about-text3 {
     color: var(--Palette1);
 }
 
