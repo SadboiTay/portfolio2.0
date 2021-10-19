@@ -178,8 +178,7 @@ nav {
 
 #icosaTEST {
     width: 50%;
-    animation: spin 2s linear forwards infinite;
-    stroke: lime;
+    /* animation: spin 2s linear forwards infinite; */
 }
 
 .section-title {
@@ -281,7 +280,6 @@ nav {
 .about-graphics-container {
     margin-top: 4rem;
     min-height: 70vh;
-    background: #011638;
 }
 
 .about-title-container {
@@ -292,14 +290,12 @@ nav {
 .portal-scene {
     position: relative;
     /* min-height: 77vh; */
-    background: green;
 }
 
 .tay-img-box {
     width: 30vh;
     margin: 0 auto;
     animation: hover 1.5s forwards infinite ease-in-out;
-    background: grey;
 }
 
 @keyframes hover {
@@ -366,13 +362,13 @@ nav {
 
 .triangle-portal {
     transform: rotateX(80deg);
-    -webkit-transform: rotateX(80deg);
-    animation: spin 2s forwards infinite linear;
-    -webkit-animation: spin 2s forwards infinite linear;
-    transform-origin: center 62%;
-    -webkit-transform-origin: center 62%;
-    transform-box: fill-box;
-    -webkit-transform-box: fill-box;
+    /* -webkit-transform: rotateX(80deg); */
+    /* animation: spin 2s forwards infinite linear; */
+    /* -webkit-animation: spin 2s forwards infinite linear; */
+    /* transform-origin: center 62%; */
+    /* -webkit-transform-origin: center 62%; */
+    /* transform-box: fill-box; */
+    /* -webkit-transform-box: fill-box; */
     stroke-width: 25px;
     width: 100%;
 }
@@ -382,10 +378,6 @@ nav {
         -webkit-transform: rotateX(80deg) rotateZ(360deg);
         transform: rotateX(80deg) rotateZ(360deg);
     }
-}
-
-svg {
-    shape-rendering: optimizeSpeed;
 }
 
 @keyframes spin {
