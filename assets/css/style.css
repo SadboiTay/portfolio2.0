@@ -367,10 +367,10 @@ nav {
     /* position: absolute; */
     /* bottom: -10%; */
     /* left: 2.5%; */
-    /* transform: rotateX(80deg); */
-    /* animation: spin 2s forwards infinite linear; */
-    /* transform-origin: center 62%; */
-    /* transform-box: fill-box; */
+    transform: rotateX(80deg);
+    animation: spin 2s forwards infinite linear;
+    transform-origin: center 62%;
+    transform-box: fill-box;
     stroke-width: 25px;
     width: 100%;
     /* z-index: -1; */
@@ -378,8 +378,7 @@ nav {
 
 @keyframes spin {
     to {
-        /* transform: rotateX(80deg) rotateZ(360deg); */
-        /* transform: rotateY(360deg); */
+        transform: rotateX(80deg) rotateZ(360deg);
     }
 }
 

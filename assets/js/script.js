@@ -106,10 +106,10 @@ for (let i = 0; i<projectRevealerElements.length; i++) {
     .addTo(controller);
 }
 
-const animatePortalTl = gsap.timeline({repeat: -1});
-animatePortalTl
-.to('.triangle-portal', {
-    duration: 3,
-    rotationY: 360,
-    ease: 'none'
-})
+// const animatePortalTl = gsap.timeline({repeat: -1});
+// animatePortalTl
+// .to('.triangle-portal', {
+//     duration: 3,
+//     rotationZ: 360,
+//     ease: 'none'
+// })
