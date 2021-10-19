@@ -280,6 +280,7 @@ nav {
 .about-graphics-container {
     margin-top: 4rem;
     min-height: 70vh;
+    background: #011638;
 }
 
 .about-title-container {
@@ -289,13 +290,15 @@ nav {
 
 .portal-scene {
     position: relative;
-    height: 77vh;
+    /* min-height: 77vh; */
+    background: green;
 }
 
 .tay-img-box {
     width: 30vh;
     margin: 0 auto;
     animation: hover 1.5s forwards infinite ease-in-out;
+    background: grey;
 }
 
 @keyframes hover {
@@ -361,16 +364,16 @@ nav {
 }
 
 .triangle-portal {
-    position: absolute;
-    bottom: -10%;
-    left: 2.5%;
-    transform: rotateX(80deg);
-    animation: spin 21s forwards infinite linear;
-    transform-origin: center 62%;
-    transform-box: fill-box;
+    /* position: absolute; */
+    /* bottom: -10%; */
+    /* left: 2.5%; */
+    /* transform: rotateX(80deg); */
+    /* animation: spin 21s forwards infinite linear; */
+    /* transform-origin: center 62%; */
+    /* transform-box: fill-box; */
     stroke-width: 25px;
     width: 100%;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 @keyframes spin {
