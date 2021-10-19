@@ -379,7 +379,7 @@ nav {
 @keyframes spin {
     to {
         /* transform: rotateX(80deg) rotateZ(360deg); */
-        transform: rotateY(360deg);
+        /* transform: rotateY(360deg); */
     }
 }
 

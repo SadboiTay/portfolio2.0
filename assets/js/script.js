@@ -105,3 +105,11 @@ for (let i = 0; i<projectRevealerElements.length; i++) {
     // .addIndicators()
     .addTo(controller);
 }
+
+// const animatePortalTl = gsap.timeline({repeat: -1});
+// animatePortalTl
+// .to('.triangle-portal', {
+//     duration: 21,
+//     rotationZ: 360,
+    
+// })
