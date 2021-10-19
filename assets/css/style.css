@@ -361,19 +361,19 @@ nav {
 }
 
 .triangle-portal {
+    -webkit-transform: rotateX(80deg);
     transform: rotateX(80deg);
-    /* -webkit-transform: rotateX(80deg); */
-    /* animation: spin 2s forwards infinite linear; */
-    /* -webkit-animation: spin 2s forwards infinite linear; */
-    /* transform-origin: center 62%; */
-    /* -webkit-transform-origin: center 62%; */
-    /* transform-box: fill-box; */
-    /* -webkit-transform-box: fill-box; */
+    /* animation: spin 2s forwards infinite linear;
+    -webkit-animation: spin 2s forwards infinite linear;
+    transform-origin: center 62%;
+    -webkit-transform-origin: center 62%;
+    transform-box: fill-box;
+    -webkit-transform-box: fill-box; */
     stroke-width: 25px;
     width: 100%;
 }
 
-@-webkit-keyframes spin {
+/* @-webkit-keyframes spin {
     to {
         -webkit-transform: rotateX(80deg) rotateZ(360deg);
         transform: rotateX(80deg) rotateZ(360deg);
@@ -385,7 +385,7 @@ nav {
         -webkit-transform: rotateX(80deg) rotateZ(360deg);
         transform: rotateX(80deg) rotateZ(360deg);
     }
-}
+} */
 
 .socials-svg {
     fill: var(--Palette1);
