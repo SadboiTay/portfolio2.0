@@ -367,8 +367,9 @@ nav {
     /* position: absolute; */
     /* bottom: -10%; */
     /* left: 2.5%; */
-    transform: rotateX(80deg);
-    animation: spin 2s forwards infinite linear;
+    /* transform: rotateX(80deg); */
+    /* animation: spin 2s forwards infinite linear; */
+    animation: hover 1s forwards infinite ease-in-out;
     transform-origin: center 62%;
     transform-box: fill-box;
     stroke-width: 25px;
