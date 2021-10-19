@@ -111,5 +111,5 @@ animatePortalTl
 .to('.triangle-portal', {
     duration: 3,
     rotationY: 360,
-    
+    ease: 'none'
 })
