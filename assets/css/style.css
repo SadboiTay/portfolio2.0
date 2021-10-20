@@ -213,6 +213,7 @@ nav {
 }
 
 .project-revealer {
+    display: block;
     background-color: var(--Palette2);
     position: absolute;
     top: 0;
@@ -361,14 +362,15 @@ nav {
 }
 
 .triangle-portal {
+    display: block;
     -webkit-transform: rotateX(80deg);
     transform: rotateX(80deg);
-    /* animation: spin 2s forwards infinite linear;
     -webkit-animation: spin 2s forwards infinite linear;
-    transform-origin: center 62%;
+    animation: spin 21s forwards infinite linear;
     -webkit-transform-origin: center 62%;
+    transform-origin: center 62%;
+    -webkit-transform-box: fill-box;
     transform-box: fill-box;
-    -webkit-transform-box: fill-box; */
     stroke-width: 25px;
     width: 100%;
 }
@@ -378,14 +380,14 @@ nav {
         -webkit-transform: rotateX(80deg) rotateZ(360deg);
         transform: rotateX(80deg) rotateZ(360deg);
     }
-}
+} */
 
 @keyframes spin {
     to {
         -webkit-transform: rotateX(80deg) rotateZ(360deg);
         transform: rotateX(80deg) rotateZ(360deg);
     }
-} */
+}
 
 .socials-svg {
     fill: var(--Palette1);
