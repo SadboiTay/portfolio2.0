@@ -132,7 +132,7 @@ tayTl
 new ScrollMagic.Scene({
     triggerElement: '.about-graphics-container',
     triggerHook: 0.1,
-    duration:800
+    duration: 3000
 })
     .setTween(tayTl)
     // .addIndicators()
