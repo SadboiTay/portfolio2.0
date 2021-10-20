@@ -284,14 +284,14 @@ nav {
 }
 
 .about-title-container {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     display: flex;
     justify-content: center;
 }
 
 .portal-scene {
     position: relative;
-    /* min-height: 77vh; */
+    /* min-height: 100vh; */
     max-width: 50vh;
 }
 

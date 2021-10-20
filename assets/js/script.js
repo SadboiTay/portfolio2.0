@@ -130,11 +130,13 @@ tayTl
     }, '<+.2')
 
 new ScrollMagic.Scene({
-    triggerElement: '.about-title-container',
-    triggerHook: 0.3,
+    triggerElement: '.about-graphics-container',
+    triggerHook: 0.1,
+    duration:800
 })
     .setTween(tayTl)
     .addIndicators()
+    .setPin('.about-graphics-container')
     .addTo(controller);
 
 // if (!tayTl.reversed()) {
