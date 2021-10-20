@@ -362,6 +362,7 @@ nav {
 }
 
 .triangle-portal {
+    -webkit-transform: translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display: block;
@@ -374,9 +375,7 @@ nav {
     -webkit-transform-box: fill-box;
     transform-box: fill-box;
     stroke-width: 25px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    stroke: var(--Palette2);
+    stroke: var(--Palette4);
     width: 100%;
 }
 
