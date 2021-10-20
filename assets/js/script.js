@@ -85,31 +85,59 @@ $('.nav-links').click(() => {
 const controller = new ScrollMagic.Controller();
 let projectRevealerElements = document.getElementsByClassName('project-revealer');
 let projectContentElements = document.getElementsByClassName('project-content')
-for (let i = 0; i<projectRevealerElements.length; i++) {
+for (let i = 0; i < projectRevealerElements.length; i++) {
     new ScrollMagic.Scene({
         triggerElement: projectRevealerElements[i],
         triggerHook: 0.9
     })
-    .setTween(gsap.timeline()
-        .to(projectRevealerElements[i], {
-            duration: 1,
-            x: '-100%',
-            ease: 'power2'
-        })
-        .to(projectContentElements[i], {
-            duration: 1,
-            y: '0%',
-            opacity: 1,
-            ease: 'power4'
-        }, "<+0.5"))
-    // .addIndicators()
-    .addTo(controller);
+        .setTween(gsap.timeline()
+            .to(projectRevealerElements[i], {
+                duration: 1,
+                x: '-100%',
+                ease: 'power2'
+            })
+            .to(projectContentElements[i], {
+                duration: 1,
+                y: '0%',
+                opacity: 1,
+                ease: 'power4'
+            }, "<+0.5"))
+        // .addIndicators()
+        .addTo(controller);
 }
 
-// const animatePortalTl = gsap.timeline({repeat: -1});
-// animatePortalTl
-// .to('.triangle-portal', {
-//     duration: 3,
-//     rotationZ: 360,
-//     ease: 'none'
-// })
+const tayTl = gsap.timeline();
+tayTl
+    .from('.tay-img-box', {
+        duration: 1,
+        y: '500px',
+        opacity: 0,
+        ease: 'back'
+    })
+    .from('.socials-svg', {
+        stagger: 0.2,
+        duration: 0.75,
+        y: '500px',
+        opacity: 0,
+        ease: 'back'
+    }, '<+.5')
+    .from('.icosahedron-svg', {
+        stagger: 0.2,
+        duration: 0.75,
+        y: '500px',
+        opacity: 0,
+        ease: 'back'
+    }, '<+.2')
+
+new ScrollMagic.Scene({
+    triggerElement: '.about-title-container',
+    triggerHook: 0.3,
+})
+    .setTween(tayTl)
+    .addIndicators()
+    .addTo(controller);
+
+// if (!tayTl.reversed()) {
+//     $('.socials-svg').toggleClass('hover')
+//     console.log('now hovering')
+// }

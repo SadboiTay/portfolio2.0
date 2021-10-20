@@ -273,17 +273,18 @@ nav {
 }
 
 .about-section {
-    border-bottom: 1px dashed var(--Palette1);
+    border-top: 1px dashed var(--Palette3);
+    border-bottom: 1px dashed var(--Palette3);
     color: var(--Palette3);
     min-height: 90vh;
 }
 
 .about-graphics-container {
-    margin-top: 4rem;
     min-height: 70vh;
 }
 
 .about-title-container {
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
 }
@@ -297,7 +298,7 @@ nav {
 .tay-img-box {
     width: 30vh;
     margin: 0 auto;
-    animation: hover 1.5s forwards infinite ease-in-out;
+    /* animation: hover 1.5s forwards infinite ease-in-out; */
 }
 
 @keyframes hover {
@@ -315,7 +316,7 @@ nav {
     left: 15%;
     top: 40%;
     width: 7vh;
-    animation: hover 1.6s forwards infinite ease-in-out;
+    /* animation: hover 1.6s forwards infinite ease-in-out; */
 }
 
 #icosa1 {
@@ -323,7 +324,7 @@ nav {
     left: 28%;
     top: 20%;
     width: 4vh;
-    animation: hover 1.2s forwards infinite ease-in-out;
+    /* animation: hover 1.2s forwards infinite ease-in-out; */
     z-index: -1;
 }
 
@@ -333,7 +334,7 @@ nav {
     top: 69%;
     width: 3vh;
     /* transform: rotateZ(-5deg); */
-    animation: hover 1.3s forwards infinite ease-in-out;
+    /* animation: hover 1.3s forwards infinite ease-in-out; */
     z-index: -1;
 }
 
@@ -343,7 +344,7 @@ nav {
     top: 42%;
     width: 3.3vh;
     /* transform: rotateZ(5deg); */
-    animation: hover 1.4s forwards infinite ease-in-out;
+    /* animation: hover 1.4s forwards infinite ease-in-out; */
 }
 
 #linkedin-svg {
@@ -351,7 +352,7 @@ nav {
     left: 55%;
     top:57%;
     width: 8vh;
-    animation: hover 1.7s forwards infinite ease-in-out;
+    /* animation: hover 1.7s forwards infinite ease-in-out; */
 }
 
 #spotify-svg {
@@ -359,7 +360,7 @@ nav {
     left: 72%;
     top: 25%;
     width: 4.5vh;
-    animation: hover 1.3s forwards infinite ease-in-out;
+    /* animation: hover 1.3s forwards infinite ease-in-out; */
 }
 
 .triangle-portal {
@@ -379,13 +380,6 @@ nav {
     width: 100%;
 }
 
-/* @-webkit-keyframes spin {
-    to {
-        -webkit-transform: rotateX(80deg) rotateZ(360deg);
-        transform: rotateX(80deg) rotateZ(360deg);
-    }
-} */
-
 @keyframes spin {
     to {
         -webkit-transform: rotateX(80deg) rotateZ(360deg);
@@ -395,7 +389,11 @@ nav {
 
 .socials-svg {
     fill: var(--Palette1);
-    transition: all .27s ease;
+    /* animation: hover 1.3s forwards infinite ease-in-out; */
+}
+
+.socials-svg.stop-hover {
+    fill: coral;
 }
 
 .socials-svg:hover {
