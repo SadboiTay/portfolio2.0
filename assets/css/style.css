@@ -331,7 +331,7 @@ nav {
     left: 36%;
     bottom: 22%;
     width: 3vh;
-    transform: rotateZ(-5deg);
+    /* transform: rotateZ(-5deg); */
     animation: hover 1.3s forwards infinite ease-in-out;
     z-index: -1;
 }
@@ -341,7 +341,7 @@ nav {
     left: 66%;
     bottom: 48%;
     width: 3.3vh;
-    transform: rotateZ(5deg);
+    /* transform: rotateZ(5deg); */
     animation: hover 1.4s forwards infinite ease-in-out;
 }
 
@@ -365,6 +365,7 @@ nav {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     display: block;
+    -webkit-transform: rotateY(80deg);
     transform: rotateY(80deg);
     /* -webkit-animation: spin 2s forwards infinite linear; */
     /* animation: spin 21s forwards infinite linear; */
@@ -373,7 +374,7 @@ nav {
     /* -webkit-transform-box: fill-box; */
     /* transform-box: fill-box; */
     stroke-width: 25px;
-    stroke: var(--Palette5);
+    stroke: var(--Palette4);
     width: 100%;
 }
 
