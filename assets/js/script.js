@@ -135,7 +135,7 @@ new ScrollMagic.Scene({
     duration:800
 })
     .setTween(tayTl)
-    .addIndicators()
+    // .addIndicators()
     .setPin('.about-graphics-container')
     .addTo(controller);
 
