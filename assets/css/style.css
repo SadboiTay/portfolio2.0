@@ -59,7 +59,7 @@ nav {
     justify-content: center;
     height: 100%;
     width: 3rem;
-    transition: all .5s ease-in-out;
+    transition: all 1s cubic-bezier(1,.02,0,.96);
     cursor: pointer;
 }
 
@@ -88,6 +88,7 @@ nav {
 }
 
 #burger-top {
+    
     transform: translateY(-13px);
 }
 
@@ -213,7 +214,6 @@ nav {
 }
 
 .project-revealer {
-    display: block;
     background-color: var(--Palette2);
     position: absolute;
     top: 0;
