@@ -392,6 +392,7 @@ nav {
     bottom: 0;
     left: 50%;
     width: 100%;
+    z-index: -99;
 }
 
 .triangle-portal {
@@ -401,14 +402,13 @@ nav {
     /* -webkit-transform: rotateY(80deg); */
     /* transform: rotateX(80deg); */
     /* -webkit-animation: spin 2s forwards infinite linear; */
-    animation: spin 2s forwards infinite linear;
+    animation: spin 7s forwards infinite linear;
     /* -webkit-transform-origin: center 62%; */
     transform-origin: center 62%;
     /* -webkit-transform-box: fill-box; */
     transform-box: fill-box;
     stroke-width: 30px;
     stroke: var(--Palette1);
-    width: 100%;
 }
 
 @keyframes perspective {
