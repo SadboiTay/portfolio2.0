@@ -387,11 +387,11 @@ nav {
 }
 
 .triangle-portal {
-    /* -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    display: block;
-    -webkit-transform: rotateY(80deg);
-    transform: rotateY(80deg); */
+    /* -webkit-backface-visibility: hidden; */
+    /* backface-visibility: hidden; */
+    /* display: block; */
+    /* -webkit-transform: rotateY(80deg); */
+    transform: rotateX(80deg);
     /* -webkit-animation: spin 2s forwards infinite linear; */
     animation: spin 3s forwards infinite linear;
     /* -webkit-transform-origin: center 62%; */
