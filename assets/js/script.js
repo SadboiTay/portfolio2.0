@@ -1,16 +1,16 @@
 let menuOpen = false;
 
 // navbar scroll hide
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function () {
-//     var currentScrollPos = window.pageYOffset;
-//     if (prevScrollpos > currentScrollPos) {
-//         document.querySelector("nav").style.top = "0";
-//     } else {
-//         document.querySelector("nav").style.top = "-50px";
-//     }
-//     prevScrollpos = currentScrollPos;
-// }
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.querySelector("nav").style.top = "0";
+    } else {
+        document.querySelector("nav").style.top = "-50px";
+    }
+    prevScrollpos = currentScrollPos;
+}
 
 // create menu page animation timeline
 var menuPageTL = gsap.timeline({ paused: true, reversed: true });
@@ -129,32 +129,34 @@ tayTl
         ease: 'back'
     }, '<+.2')
 
-new ScrollMagic.Scene({
-    triggerElement: '.about-graphics-container',
-    triggerHook: 0.1,
-    duration: 1400
+// new ScrollMagic.Scene({
+//     triggerElement: '.about-graphics-container',
+//     triggerHook: 0.1,
+//     duration: 1400
+// })
+//     .setTween(tayTl)
+//     // .addIndicators()
+//     .setPin('.about-graphics-container')
+//     .addTo(controller);
+
+// const icosa3 = document.querySelector('#icosa3');
+
+// const hoverChecker = setInterval(() => {
+//     if(gsap.getProperty(icosa3, 'opacity') === 1) {
+//         console.log('ayyy')
+//         $('.socials-svg').addClass('hover')
+//         $('.icosahedron-svg').addClass('hover')
+//     }
+//     if(gsap.getProperty(icosa3, 'opacity') < .8) {
+//         console.log('BYE')
+//         $('.socials-svg').removeClass('hover')
+//         $('.icosahedron-svg').removeClass('hover')
+//     }
+// }, 500)
+
+const aboutPortal = gsap.timeline()
+aboutPortal
+.to('.triangle-portal', {
+    duration: 0,
+    skewX: 60
 })
-    .setTween(tayTl)
-    // .addIndicators()
-    .setPin('.about-graphics-container')
-    .addTo(controller);
-
-// if (!tayTl.reversed()) {
-//     $('.socials-svg').toggleClass('hover')
-//     console.log('now hovering')
-// }
-
-const icosa3 = document.querySelector('#icosa3');
-
-const hoverChecker = setInterval(() => {
-    if(gsap.getProperty(icosa3, 'opacity') === 1) {
-        console.log('ayyy')
-        $('.socials-svg').addClass('hover')
-        $('.icosahedron-svg').addClass('hover')
-    }
-    if(gsap.getProperty(icosa3, 'opacity') < .8) {
-        console.log('BYE')
-        $('.socials-svg').removeClass('hover')
-        $('.icosahedron-svg').removeClass('hover')
-    }
-}, 500)
