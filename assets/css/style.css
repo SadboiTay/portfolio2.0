@@ -302,7 +302,7 @@ nav {
 .tay-img-box {
     width: 30vh;
     margin: 0 auto;
-    /* animation: hover 1.5s forwards infinite ease-in-out; */
+    animation: hover 1.5s forwards infinite ease-in-out;
 }
 
 @keyframes hover {
