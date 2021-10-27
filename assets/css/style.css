@@ -403,7 +403,7 @@ nav {
     /* -webkit-transform-box: fill-box; */
     transform-box: fill-box;
     stroke-width: 30px;
-    stroke: var(--Palette4);
+    stroke: var(--Palette1);
     width: 100%;
 }
 
