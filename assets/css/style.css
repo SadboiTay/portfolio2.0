@@ -393,7 +393,7 @@ nav {
     -webkit-transform: rotateY(80deg);
     transform: rotateY(80deg); */
     /* -webkit-animation: spin 2s forwards infinite linear; */
-    animation: spin 3s forwards infinite linear;
+    /* animation: spin 3s forwards infinite linear; */
     /* -webkit-transform-origin: center 62%; */
     transform-origin: center 62%;
     /* -webkit-transform-box: fill-box; */
