@@ -2,6 +2,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -427,38 +428,33 @@ nav {
 }
 
 footer {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.contact-section {
-    border-bottom: 1px dashed var(--Palette1);
+    padding-top: 10vh;
     color: var(--Palette4);
-    height: 50%;
 }
 
-.links {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.links::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 200vw;
-    height: 200vw;
-    margin-left: -100vw;
-    z-index: -1;
-    border-radius: 50%;
-    background-color: var(--Palette5);
+.email-address {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    padding-left: 10px;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    text-transform: uppercase;
+    font-weight: 350;
+    line-height: .5;
+}
+
+.gmail {
+    letter-spacing: 3px;
+    color: var(--Palette1);
+    margin-left: 30px;
+}
+
+.contact-section .section-title {
+    font-weight: 300;
+    font-size: 1.5rem;
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
