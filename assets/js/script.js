@@ -94,14 +94,14 @@ for (let i = 0; i < projectRevealerElements.length; i++) {
             .to(projectRevealerElements[i], {
                 duration: 1,
                 x: '-100%',
-                ease: 'power2'
+                ease: Expo.inOut
             })
             .to(projectContentElements[i], {
-                duration: 1,
+                duration: 0.4,
                 y: '0%',
                 opacity: 1,
-                ease: 'power4'
-            }, "<+0.5"))
+                ease: Expo.inOut
+            }, "<+0.7"))
         // .addIndicators()
         .addTo(controller);
 }
@@ -132,7 +132,7 @@ tayTl
 new ScrollMagic.Scene({
     triggerElement: '.about-graphics-container',
     triggerHook: 0.1,
-    duration: 3000
+    duration: 1400
 })
     .setTween(tayTl)
     // .addIndicators()
