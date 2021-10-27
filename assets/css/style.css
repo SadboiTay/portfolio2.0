@@ -399,7 +399,7 @@ nav {
     /* -webkit-transform-box: fill-box; */
     transform-box: fill-box;
     stroke-width: 25px;
-    stroke: var(--Palette3);
+    stroke: var(--Palette5);
     width: 70%;
 }
 
