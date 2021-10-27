@@ -305,11 +305,11 @@ nav {
     /* animation: hover 1.5s forwards infinite ease-in-out; */
 }
 
-/* @keyframes hover {
+@keyframes hover {
     50% {
         transform: translateY(7px);
     }
-} */
+}
 
 #github-svg.hover {
     animation: hover 1.5s forwards infinite ease-in-out;
