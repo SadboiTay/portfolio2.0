@@ -387,6 +387,10 @@ nav {
     animation: hover 1.3s forwards infinite ease-in-out;
 }
 
+.portal-section {
+    position: relative;
+}
+
 .portal-parent {
     transform: translateY(50%) translateX(-50%) rotateX(80deg);
     position: absolute;
@@ -409,7 +413,7 @@ nav {
     /* -webkit-transform-box: fill-box; */
     transform-box: fill-box;
     stroke-width: 30px;
-    stroke: var(--Palette5);
+    stroke: var(--Palette4);
 }
 
 @keyframes perspective {
