@@ -106,28 +106,28 @@ for (let i = 0; i < projectRevealerElements.length; i++) {
         .addTo(controller);
 }
 
-const tayTl = gsap.timeline();
-tayTl
-    .from('.tay-img-box', {
-        duration: 1,
-        y: '500px',
-        opacity: 0,
-        ease: 'back'
-    })
-    .from('.socials-svg', {
-        stagger: 0.2,
-        duration: 0.75,
-        y: '500px',
-        opacity: 0,
-        ease: 'back'
-    }, '<+.5')
-    .from('.icosahedron-svg', {
-        stagger: 0.2,
-        duration: 0.75,
-        y: '500px',
-        opacity: 0,
-        ease: 'back'
-    }, '<+.2')
+// const tayTl = gsap.timeline();
+// tayTl
+//     .from('.tay-img-box', {
+//         duration: 1,
+//         y: '500px',
+//         opacity: 0,
+//         ease: 'back'
+//     })
+//     .from('.socials-svg', {
+//         stagger: 0.2,
+//         duration: 0.75,
+//         y: '500px',
+//         opacity: 0,
+//         ease: 'back'
+//     }, '<+.5')
+//     .from('.icosahedron-svg', {
+//         stagger: 0.2,
+//         duration: 0.75,
+//         y: '500px',
+//         opacity: 0,
+//         ease: 'back'
+//     }, '<+.2')
 
 // new ScrollMagic.Scene({
 //     triggerElement: '.about-graphics-container',
