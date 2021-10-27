@@ -143,3 +143,18 @@ new ScrollMagic.Scene({
 //     $('.socials-svg').toggleClass('hover')
 //     console.log('now hovering')
 // }
+
+const icosa3 = document.querySelector('#icosa3');
+
+const hoverChecker = setInterval(() => {
+    if(gsap.getProperty(icosa3, 'opacity') === 1) {
+        console.log('ayyy')
+        $('.socials-svg').addClass('hover')
+        $('.icosahedron-svg').addClass('hover')
+    }
+    if(gsap.getProperty(icosa3, 'opacity') < .8) {
+        console.log('BYE')
+        $('.socials-svg').removeClass('hover')
+        $('.icosahedron-svg').removeClass('hover')
+    }
+}, 500)

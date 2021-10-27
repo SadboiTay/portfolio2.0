@@ -308,6 +308,25 @@ nav {
     }
 }
 
+#github-svg.hover {
+    animation: hover 1.5s forwards infinite ease-in-out;
+}
+#spotify-svg.hover {
+    animation: hover 1.6s forwards infinite ease-in-out;
+}
+#linkedin-svg.hover {
+    animation: hover 1.3s forwards infinite ease-in-out;
+}
+#icosa1.hover {
+    animation: hover 1.6s forwards infinite ease-in-out;
+}
+#icosa2.hover {
+    animation: hover 1.2s forwards infinite ease-in-out;
+}
+#icosa3.hover {
+    animation: hover 1.8s forwards infinite ease-in-out;
+}
+
 .tay-img-box img {
     width: 100%;
 }
