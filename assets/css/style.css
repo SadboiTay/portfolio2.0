@@ -285,7 +285,6 @@ nav {
 
 .about-graphics-container {
     min-height: 70vh;
-    position: relative;
 }
 
 .about-title-container {
@@ -303,6 +302,11 @@ nav {
 .tay-img-box {
     width: 30vh;
     margin: 0 auto;
+    /* animation: hover 1.5s forwards infinite ease-in-out; */
+    background-color: #383630;
+}
+
+.tay-img-box img {
     animation: hover 1.5s forwards infinite ease-in-out;
 }
 
@@ -385,10 +389,6 @@ nav {
     top: 25%;
     width: 4.5vh;
     animation: hover 1.3s forwards infinite ease-in-out;
-}
-
-.portal-section {
-    position: relative;
 }
 
 .portal-parent {
