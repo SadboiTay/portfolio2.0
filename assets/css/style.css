@@ -391,7 +391,7 @@ nav {
     /* backface-visibility: hidden; */
     /* display: block; */
     /* -webkit-transform: rotateY(80deg); */
-    /* transform: rotateX(80deg); */
+    transform: rotateX(80deg);
     /* -webkit-animation: spin 2s forwards infinite linear; */
     animation: spin 3s forwards infinite linear;
     /* -webkit-transform-origin: center 62%; */
@@ -404,12 +404,12 @@ nav {
 }
 
 @keyframes spin {
-    from {
+    /* from {
         transform: rotateX(80deg);
-    }
+    } */
     to {
-        -webkit-transform: rotateX(80deg) rotateZ(360deg);
-        transform: rotateX(80deg) rotateZ(360deg);
+        -webkit-transform: rotateX(85deg) rotateZ(360deg);
+        transform: rotateX(85deg) rotateZ(360deg);
     }
 }
 
