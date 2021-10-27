@@ -154,13 +154,13 @@ tayTl
 //     }
 // }, 500)
 
-const aboutPortal = gsap.timeline()
-aboutPortal
-.to('.triangle-portal', {
-    duration: 0,
-    skewX: 50,
-    x: '10%',
-})
+// const aboutPortal = gsap.timeline()
+// aboutPortal
+// .to('.triangle-portal', {
+//     duration: 0,
+//     skewX: 50,
+//     x: '10%',
+// })
 // .to('.triangle-portal', {
 //     duration: 2,
 //     rotationZ: 360
