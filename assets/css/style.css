@@ -302,11 +302,6 @@ nav {
 .tay-img-box {
     width: 30vh;
     margin: 0 auto;
-    /* animation: hover 1.5s forwards infinite ease-in-out; */
-    background-color: #383630;
-}
-
-.tay-img-box img {
     animation: hover 1.5s forwards infinite ease-in-out;
 }
 
@@ -413,7 +408,8 @@ nav {
     /* -webkit-transform-box: fill-box; */
     transform-box: fill-box;
     stroke-width: 30px;
-    stroke: var(--Palette4);
+    stroke: var(--Palette5);
+    width: 99%;
 }
 
 @keyframes perspective {
