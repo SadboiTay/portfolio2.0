@@ -111,29 +111,29 @@ tayTl
     .from('.triangle-portal', {
         duration: 1,
         scale: 0,
-        ease: 'power3.in'
+        ease: 'power4.in'
     })
     .from('.tay-img-box', {
-        duration: 1,
+        duration: .8,
         y: '225px',
         // opacity: 0,
-        ease: 'expo',
+        ease: 'expo.in',
         scale: 0
-    })
+    }, '>-.4')
     .from('.socials-svg', {
         stagger: 0.2,
-        duration: 0.75,
-        y: '200px',
+        duration: 0.4,
+        y: '175px',
         // opacity: 0,
-        ease: 'back',
+        ease: 'expo.in',
         scale: 0
     }, '<+.5')
     .from('.icosahedron-svg', {
         stagger: 0.2,
-        duration: 0.75,
-        y: '200px',
-        opacity: 0,
-        ease: 'back',
+        duration: 0.4,
+        y: '150px',
+        // opacity: 0,
+        ease: 'expo.in',
         scale: 0
     }, '<+.2')
 
@@ -143,25 +143,23 @@ new ScrollMagic.Scene({
     // duration: 1400
 })
     .setTween(tayTl)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
 const icosa3 = document.querySelector('#icosa3');
 
 const hoverChecker = setInterval(() => {
-    if(gsap.getProperty(icosa3, 'opacity') === 1) {
-        console.log('ayyy')
+    if(gsap.getProperty(icosa3, 'scale') === 1) {
         $('.tay-img-box').addClass('hover')
         $('.socials-svg').addClass('hover')
         $('.icosahedron-svg').addClass('hover')
     }
-    if(gsap.getProperty(icosa3, 'opacity') < .8) {
-        console.log('BYE')
+    if(gsap.getProperty(icosa3, 'scale') < .8) {
         $('.tay-img-box').removeClass('hover')
         $('.socials-svg').removeClass('hover')
         $('.icosahedron-svg').removeClass('hover')
     }
-}, 500)
+}, 100)
 
 // const aboutPortal = gsap.timeline()
 // aboutPortal
