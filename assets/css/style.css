@@ -401,7 +401,7 @@ nav {
     transform-origin: center 64%;
     transform-box: fill-box;
     stroke-width: 10px;
-    stroke: var(--Palette5);
+    stroke: var(--Palette3);
 }
 
 @keyframes perspective {

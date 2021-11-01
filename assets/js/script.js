@@ -108,10 +108,11 @@ for (let i = 0; i < projectRevealerElements.length; i++) {
 
 const tayTl = gsap.timeline();
 tayTl
-    .from('.triangle-portal', {
-        duration: .5,
-        scale: 0
-    })
+    // .from('.triangle-portal', {
+    //     duration: 2,
+    //     scale: 0,
+    //     ease: 'elastic.out'
+    // })
     .from('.tay-img-box', {
         duration: 1,
         y: '250px',
@@ -138,7 +139,7 @@ tayTl
 
 new ScrollMagic.Scene({
     triggerElement: '.about-graphics-container',
-    triggerHook: 0.25,
+    triggerHook: 0.1,
     // duration: 1400
 })
     .setTween(tayTl)
