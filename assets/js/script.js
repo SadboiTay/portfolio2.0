@@ -106,53 +106,59 @@ for (let i = 0; i < projectRevealerElements.length; i++) {
         .addTo(controller);
 }
 
-// const tayTl = gsap.timeline();
-// tayTl
-//     .from('.tay-img-box', {
-//         duration: 1,
-//         y: '500px',
-//         opacity: 0,
-//         ease: 'back'
-//     })
-//     .from('.socials-svg', {
-//         stagger: 0.2,
-//         duration: 0.75,
-//         y: '500px',
-//         opacity: 0,
-//         ease: 'back'
-//     }, '<+.5')
-//     .from('.icosahedron-svg', {
-//         stagger: 0.2,
-//         duration: 0.75,
-//         y: '500px',
-//         opacity: 0,
-//         ease: 'back'
-//     }, '<+.2')
+const tayTl = gsap.timeline();
+tayTl
+    .from('.triangle-portal', {
+        duration: .5,
+        scale: 0
+    })
+    .from('.tay-img-box', {
+        duration: 1,
+        y: '250px',
+        // opacity: 0,
+        ease: 'expo',
+        scale: 0
+    })
+    .from('.socials-svg', {
+        stagger: 0.2,
+        duration: 0.75,
+        y: '200px',
+        // opacity: 0,
+        ease: 'back',
+        scale: 0
+    }, '<+.5')
+    .from('.icosahedron-svg', {
+        stagger: 0.2,
+        duration: 0.75,
+        y: '200px',
+        opacity: 0,
+        ease: 'back',
+        scale: 0
+    }, '<+.2')
 
-// new ScrollMagic.Scene({
-//     triggerElement: '.about-graphics-container',
-//     triggerHook: 0.1,
-//     duration: 1400
-// })
-//     .setTween(tayTl)
-//     // .addIndicators()
-//     .setPin('.about-graphics-container')
-//     .addTo(controller);
+new ScrollMagic.Scene({
+    triggerElement: '.about-graphics-container',
+    triggerHook: 0.25,
+    // duration: 1400
+})
+    .setTween(tayTl)
+    .addIndicators()
+    .addTo(controller);
 
-// const icosa3 = document.querySelector('#icosa3');
+const icosa3 = document.querySelector('#icosa3');
 
-// const hoverChecker = setInterval(() => {
-//     if(gsap.getProperty(icosa3, 'opacity') === 1) {
-//         console.log('ayyy')
-//         $('.socials-svg').addClass('hover')
-//         $('.icosahedron-svg').addClass('hover')
-//     }
-//     if(gsap.getProperty(icosa3, 'opacity') < .8) {
-//         console.log('BYE')
-//         $('.socials-svg').removeClass('hover')
-//         $('.icosahedron-svg').removeClass('hover')
-//     }
-// }, 500)
+const hoverChecker = setInterval(() => {
+    if(gsap.getProperty(icosa3, 'opacity') === 1) {
+        console.log('ayyy')
+        $('.socials-svg').addClass('hover')
+        $('.icosahedron-svg').addClass('hover')
+    }
+    if(gsap.getProperty(icosa3, 'opacity') < .8) {
+        console.log('BYE')
+        $('.socials-svg').removeClass('hover')
+        $('.icosahedron-svg').removeClass('hover')
+    }
+}, 500)
 
 // const aboutPortal = gsap.timeline()
 // aboutPortal
