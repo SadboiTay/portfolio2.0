@@ -312,8 +312,11 @@ nav {
     }
 }
 
+.tay-img-box.hover {
+    animation: hover 1.7s forwards infinite ease-in-out;
+}
 #github-svg.hover {
-    animation: hover 1.5s forwards infinite ease-in-out;
+    animation: hover 1.44s forwards infinite ease-in-out;
 }
 #spotify-svg.hover {
     animation: hover 1.6s forwards infinite ease-in-out;
@@ -388,34 +391,31 @@ nav {
 }
 
 .portal-parent {
-    transform: translateY(50%) translateX(-50%) rotateX(80deg);
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 90%;
+    bottom: -40px;
+    width: 100%;
     z-index: -99;
 }
 
 .triangle-portal {
     /* animation: spin 7s forwards infinite linear; */
-    transform-origin: center 64%;
     transform-box: fill-box;
-    stroke-width: 10px;
-    stroke: var(--Palette3);
+    transform-origin: center;
+    stroke-width: 5px;
+    stroke: var(--Palette5);
+    animation: color-fill 14s ease-in-out forwards infinite;
+    fill-opacity: 0.3;
 }
 
-@keyframes perspective {
-    from {
-        transform: rotateX(10deg);
+@keyframes color-fill {
+    25% {
+        fill: var(--Palette2);
     }
-    to {
-        transform: rotateX(85deg);
+    50% {
+        fill: var(--Palette3);
     }
-}
-
-@keyframes spin {
-    to {
-        transform: rotateZ(360deg);
+    75% {
+        fill: var(--Palette4);
     }
 }
 

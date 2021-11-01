@@ -108,14 +108,14 @@ for (let i = 0; i < projectRevealerElements.length; i++) {
 
 const tayTl = gsap.timeline();
 tayTl
-    // .from('.triangle-portal', {
-    //     duration: 2,
-    //     scale: 0,
-    //     ease: 'elastic.out'
-    // })
+    .from('.triangle-portal', {
+        duration: 1,
+        scale: 0,
+        ease: 'power3.in'
+    })
     .from('.tay-img-box', {
         duration: 1,
-        y: '250px',
+        y: '225px',
         // opacity: 0,
         ease: 'expo',
         scale: 0
@@ -139,7 +139,7 @@ tayTl
 
 new ScrollMagic.Scene({
     triggerElement: '.about-graphics-container',
-    triggerHook: 0.1,
+    triggerHook: 0.2,
     // duration: 1400
 })
     .setTween(tayTl)
@@ -151,11 +151,13 @@ const icosa3 = document.querySelector('#icosa3');
 const hoverChecker = setInterval(() => {
     if(gsap.getProperty(icosa3, 'opacity') === 1) {
         console.log('ayyy')
+        $('.tay-img-box').addClass('hover')
         $('.socials-svg').addClass('hover')
         $('.icosahedron-svg').addClass('hover')
     }
     if(gsap.getProperty(icosa3, 'opacity') < .8) {
         console.log('BYE')
+        $('.tay-img-box').removeClass('hover')
         $('.socials-svg').removeClass('hover')
         $('.icosahedron-svg').removeClass('hover')
     }
