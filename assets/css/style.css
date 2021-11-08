@@ -284,9 +284,40 @@ section {
     min-height: 90vh;
 }
 
-.about-graphics-container {
-    min-height: 70vh;
+/*  */
+/* NEW PORTAL SCENE */
+/*  */
+
+#portal-scene {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
 }
+
+.socials-about {
+    fill: var(--Palette5);
+}
+
+.socials-about:hover {
+    fill: var(--Palette4);
+}
+
+#github-about {
+    animation: hover 1.5s forwards infinite ease-in-out;
+}
+
+#spotify-about {
+    animation: hover 1.6s forwards infinite ease-in-out;
+}
+
+#linkedin-about {
+    animation: hover 1.4s forwards infinite ease-in-out;
+}
+
+/*  */
+/* END NEW PORTAL SCENE */
+/*  */
 
 .about-title-container {
     /* margin-top: 5rem; */
@@ -309,7 +340,7 @@ section {
 
 @keyframes hover {
     50% {
-        transform: translateY(7px);
+        transform: translateY(10px);
     }
 }
 
