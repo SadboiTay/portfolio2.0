@@ -44,23 +44,23 @@ nav {
 }
 
 .logo {
-    margin: 2rem;
+    margin-left: 7vw;
     color: var(--Palette1);
-    font-size: 1.5rem;
 }
 
 .logo h1 {
     font-weight: 300;
+    font-size: 30px;
 }
 
 .menu-btn {
     position: relative;
-    margin: 2rem;
+    margin-right: 7vw;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 3rem;
+    width: 45px;
     transition: all 1s cubic-bezier(1,.02,0,.96);
     cursor: pointer;
 }
@@ -179,11 +179,6 @@ nav {
     padding: .5rem;
     font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     font-weight: 350;
-}
-
-#icosaTEST {
-    width: 50%;
-    /* animation: spin 2s linear forwards infinite; */
 }
 
 .section-title {
@@ -425,6 +420,25 @@ nav {
 
 .icosahedron-svg {
     stroke: var(--Palette3);
+}
+
+.jumbo-icosa {
+    stroke: var(--Palette3);
+    max-width: 400px;
+    animation: color-stroke-wheel 14s forwards infinite;
+    width: 50%;
+}
+
+@keyframes color-stroke-wheel {
+    25% {
+        stroke: var(--Palette2);
+    }
+    50% {
+        stroke: var(--Palette3);
+    }
+    75% {
+        stroke: var(--Palette4);
+    }
 }
 
 .about-text2, .about-text3, .about-text4 {
