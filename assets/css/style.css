@@ -586,7 +586,7 @@ footer h5 {
 
 .footer-socials {
     fill: var(--Palette4);
-    width: 2rem;
+    width: 32px;
     margin: 0 5px;
     transition: all .25s ease-in-out;
 }

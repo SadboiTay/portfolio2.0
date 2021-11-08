@@ -12,12 +12,6 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 
-// back to top btn
-// function backToTop() {
-//     document.body.scrollTop = 0; // For Safari
-//     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-// }
-
 // smooth back to top for safari 
 function scrollToSmoothly(pos, time) {
     var currentPos = window.pageYOffset;
