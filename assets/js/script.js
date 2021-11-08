@@ -88,7 +88,6 @@ $('.menu-btn').click(() => {
         menuOpen = false;
     }
 
-
     // animate page out
     animateMenuPage();
 })
