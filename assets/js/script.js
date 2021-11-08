@@ -12,6 +12,12 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 
+// back to top btn
+function backToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 // create menu page animation timeline
 var menuPageTL = gsap.timeline({ paused: true, reversed: true });
 menuPageTL.to('main', {
@@ -120,7 +126,7 @@ tayTl
         ease: 'expo.in',
         scale: 0
     }, '>-.4')
-    .from('.socials-svg', {
+    .from('.about-socials', {
         stagger: 0.2,
         duration: 0.4,
         y: '175px',
@@ -149,14 +155,14 @@ new ScrollMagic.Scene({
 const icosa3 = document.querySelector('#icosa3');
 
 const hoverChecker = setInterval(() => {
-    if(gsap.getProperty(icosa3, 'scale') === 1) {
+    if (gsap.getProperty(icosa3, 'scale') === 1) {
         $('.tay-img-box').addClass('hover')
-        $('.socials-svg').addClass('hover')
+        $('.about-socials').addClass('hover')
         $('.icosahedron-svg').addClass('hover')
     }
-    if(gsap.getProperty(icosa3, 'scale') < .8) {
+    if (gsap.getProperty(icosa3, 'scale') < .8) {
         $('.tay-img-box').removeClass('hover')
-        $('.socials-svg').removeClass('hover')
+        $('.about-socials').removeClass('hover')
         $('.icosahedron-svg').removeClass('hover')
     }
 }, 100)
