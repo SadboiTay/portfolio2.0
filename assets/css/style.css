@@ -326,6 +326,7 @@ section {
 
 #portal {
     transform-origin: center;
+    -webkit-transform-origin: center;
     stroke: var(--Palette3);
     stroke-width: 30;
 }
