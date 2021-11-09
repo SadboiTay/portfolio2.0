@@ -103,16 +103,19 @@ nav {
 /* hamburger animation */
 
 .menu-btn.open #burger-mid {
-    transform: rotate(90deg) translateY(-1.5rem);
-    width: 80%;
+    transform: rotate(90deg) translateY(-22px);
+    width: 81%;
+    border-radius: 5px;
 }
 
 .menu-btn.open #burger-top {
     transform: rotate(23deg) translateY(7.5px) translateX(5px);
+    border-radius: 5px;
 }
 
 .menu-btn.open #burger-bot {
     transform: rotate(-23deg) translateY(-7.5px) translateX(5px);
+    border-radius: 5px;
 }
 
 /* END hamburger animation */
@@ -281,7 +284,6 @@ section {
     /* border-top: 1px dashed var(--Palette3); */
     /* border-bottom: 1px dashed var(--Palette3); */
     color: var(--Palette3);
-    min-height: 90vh;
 }
 
 /*  */
@@ -326,7 +328,6 @@ section {
     transform-origin: center;
     stroke: var(--Palette3);
     stroke-width: 30;
-    overflow: hidden;
 }
 
 /*  */
@@ -521,4 +522,65 @@ footer h5 {
     margin-top: 20px;
     text-align: center;
     font-size: 12px;
+}
+
+/*  */
+/*  */
+/*  */
+/* MEDA QUERIES */
+/*  */
+/*  */
+/*  */
+
+@media screen and (min-width:  768px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:  950px) {
+    .main-wrap {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:  1200px) {
+    html {
+        font-size: 20px;
+    }
+
+    nav {
+        height: 70px;
+    }
+    
+    .logo h1 {
+        font-size: 40px;
+    }
+
+    .main-wrap {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .project-card {
+        width: 94%;
+    }
+
+    .about-section {
+        position: relative;
+    }
+
+    .about-graphics-container {
+        position: absolute;
+        min-height: 50vh;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 60%;
+    }
+
+    .about-text-wrap {
+        width: 50%;
+    }
 }
