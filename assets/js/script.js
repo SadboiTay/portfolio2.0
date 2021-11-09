@@ -153,7 +153,7 @@ new ScrollMagic.Scene({
     triggerHook: .75,
 })
     .setTween(portalSceneTl)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
 const linkedInEl = document.querySelector('#linkedin-about')
