@@ -127,69 +127,42 @@ for (let i = 0; i < projectRevealerElements.length; i++) {
         .addTo(controller);
 }
 
-const tayTl = gsap.timeline();
-tayTl
-    .from('.triangle-portal', {
+const portalSceneTl = gsap.timeline();
+portalSceneTl
+    .from('#portal', {
         duration: 1,
         scale: 0,
-        ease: 'power4.in'
+        ease: 'expo'
     })
-    .from('.tay-img-box', {
-        duration: .8,
-        y: '225px',
-        // opacity: 0,
-        ease: 'expo.in',
-        scale: 0
-    }, '>-.4')
-    .from('.about-socials', {
-        stagger: 0.2,
-        duration: 0.4,
-        y: '175px',
-        // opacity: 0,
-        ease: 'expo.in',
-        scale: 0
+    .from('#tay-cropped', {
+        duration: 1.5,
+        ease: 'expo',
+        // y: '100%',
+        opacity: 0
     }, '<+.5')
-    .from('.icosahedron-svg', {
-        stagger: 0.2,
-        duration: 0.4,
-        y: '150px',
-        // opacity: 0,
-        ease: 'expo.in',
-        scale: 0
+    .from('.socials-about', {
+        duration: 1,
+        y: '100%',
+        ease: 'back',
+        opacity: 0,
+        stagger: .2
     }, '<+.2')
 
 new ScrollMagic.Scene({
     triggerElement: '.about-graphics-container',
-    triggerHook: 0.2,
-    // duration: 1400
+    triggerHook: .75,
 })
-    .setTween(tayTl)
-    // .addIndicators()
+    .setTween(portalSceneTl)
+    .addIndicators()
     .addTo(controller);
 
-const icosa3 = document.querySelector('#icosa3');
+const linkedInEl = document.querySelector('#linkedin-about')
 
 const hoverChecker = setInterval(() => {
-    if (gsap.getProperty(icosa3, 'scale') === 1) {
-        $('.tay-img-box').addClass('hover')
-        $('.about-socials').addClass('hover')
-        $('.icosahedron-svg').addClass('hover')
+    if (gsap.getProperty(linkedInEl, 'opacity') === 1) {
+        $('.socials-about').addClass('animate-hover')
     }
-    if (gsap.getProperty(icosa3, 'scale') < .8) {
-        $('.tay-img-box').removeClass('hover')
-        $('.about-socials').removeClass('hover')
-        $('.icosahedron-svg').removeClass('hover')
+    if (gsap.getProperty(linkedInEl, 'opacity') <.9) {
+        $('.socials-about').removeClass('animate-hover')
     }
 }, 100)
-
-// const aboutPortal = gsap.timeline()
-// aboutPortal
-// .to('.triangle-portal', {
-//     duration: 0,
-//     skewX: 50,
-//     x: '10%',
-// })
-// .to('.triangle-portal', {
-//     duration: 2,
-//     rotationZ: 360
-// })

@@ -291,28 +291,42 @@ section {
 #portal-scene {
     width: 80%;
     max-width: 500px;
-    margin: 0 auto;
+    margin: 10px auto;
     display: block;
 }
 
 .socials-about {
     fill: var(--Palette5);
+    transition: fill .5s;
 }
 
 .socials-about:hover {
     fill: var(--Palette4);
 }
 
-#github-about {
+#github-about.animate-hover {
     animation: hover 1.5s forwards infinite ease-in-out;
 }
 
-#spotify-about {
+#spotify-about.animate-hover {
     animation: hover 1.6s forwards infinite ease-in-out;
 }
 
-#linkedin-about {
+#linkedin-about.animate-hover {
     animation: hover 1.4s forwards infinite ease-in-out;
+}
+
+@keyframes hover {
+    50% {
+        transform: translateY(15px);
+    }
+}
+
+#portal {
+    transform-origin: center;
+    stroke: var(--Palette3);
+    stroke-width: 30;
+    overflow: hidden;
 }
 
 /*  */
@@ -325,111 +339,6 @@ section {
     justify-content: center;
 }
 
-.portal-scene {
-    position: relative;
-    /* min-height: 100vh; */
-    max-width: 50vh;
-    /* margin-bottom: 30px; */
-}
-
-.tay-img-box {
-    width: 25vh;
-    margin: 0 auto;
-    /* animation: hover 1.5s forwards infinite ease-in-out; */
-}
-
-@keyframes hover {
-    50% {
-        transform: translateY(10px);
-    }
-}
-
-.tay-img-box.hover {
-    animation: hover 1.7s forwards infinite ease-in-out;
-}
-#github-svg.hover {
-    animation: hover 1.44s forwards infinite ease-in-out;
-}
-#spotify-svg.hover {
-    animation: hover 1.6s forwards infinite ease-in-out;
-}
-#linkedin-svg.hover {
-    animation: hover 1.3s forwards infinite ease-in-out;
-}
-#icosa1.hover {
-    animation: hover 1.6s forwards infinite ease-in-out;
-}
-#icosa2.hover {
-    animation: hover 1.2s forwards infinite ease-in-out;
-}
-#icosa3.hover {
-    animation: hover 1.8s forwards infinite ease-in-out;
-}
-
-.tay-img-box img {
-    width: 100%;
-}
-
-#github-svg {
-    position: absolute;
-    left: 19%;
-    top: 40%;
-    width: 6vh;
-}
-
-#icosa1 {
-    position: absolute;
-    left: 28%;
-    top: 20%;
-    width: 4vh;
-    z-index: -1;
-}
-
-#icosa2 {
-    position: absolute;
-    left: 33%;
-    top: 69%;
-    width: 3vh;
-    z-index: -1;
-}
-
-#icosa3 {
-    position: absolute;
-    left: 63%;
-    top: 42%;
-    width: 3.3vh;
-}
-
-#linkedin-svg {
-    position: absolute;
-    left: 55%;
-    top:59%;
-    width: 7vh;
-}
-
-#spotify-svg {
-    position: absolute;
-    left: 70%;
-    top: 25%;
-    width: 4vh;
-}
-
-.portal-parent {
-    position: absolute;
-    bottom: -40px;
-    width: 100%;
-    z-index: -99;
-}
-
-.triangle-portal {
-    transform-box: fill-box;
-    transform-origin: center;
-    stroke-width: 5px;
-    stroke: var(--Palette5);
-    animation: color-fill 14s ease-in-out forwards infinite;
-    fill-opacity: 0.25;
-}
-
 @keyframes color-fill {
     25% {
         fill: var(--Palette2);
@@ -440,23 +349,6 @@ section {
     75% {
         fill: var(--Palette4);
     }
-}
-
-.about-socials {
-    fill: var(--Palette5);
-    /* animation: hover 1.3s forwards infinite ease-in-out; */
-}
-
-.about-socials.stop-hover {
-    fill: coral;
-}
-
-.about-socials:hover {
-    fill: var(--Palette4);
-}
-
-.icosahedron-svg {
-    stroke: var(--Palette3);
 }
 
 .jumbo-icosa {
