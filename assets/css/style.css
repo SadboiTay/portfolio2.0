@@ -544,19 +544,46 @@ footer h5 {
         width: 80%;
         margin: 0 auto;
     }
+
+    nav {
+        background-color: initial;
+        height: initial;
+        width: initial;
+        display: initial;
+        position: fixed;
+        transition: top 0.3s;
+        z-index: 99;
+    }
+    
+    .logo {
+        margin-left: initial;
+        position: fixed;
+        top: 2vh;
+        left: 2vw;
+        color: var(--Palette1);
+    }
+    
+    .logo h1 {
+        font-weight: 300;
+        font-size: 50px;
+    }
+    
+    .menu-btn {
+        position: fixed;
+        top: 5%;
+        right: 2.5%;
+        margin-right: initial;
+        display: initial;
+        height: 100%;
+        width: 45px;
+        transition: all 1s cubic-bezier(1,.02,0,.96);
+        cursor: pointer;
+    }
 }
 
 @media screen and (min-width:  1200px) {
     html {
         font-size: 20px;
-    }
-
-    nav {
-        height: 70px;
-    }
-    
-    .logo h1 {
-        font-size: 40px;
     }
 
     .main-wrap {

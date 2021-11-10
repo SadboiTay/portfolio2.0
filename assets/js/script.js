@@ -3,13 +3,15 @@ let menuOpen = false;
 // navbar scroll hide
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.querySelector("nav").style.top = "0";
-    } else {
-        document.querySelector("nav").style.top = "-50px";
+    if ($(window).width() < 950){
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.querySelector("nav").style.top = "0";
+        } else {
+            document.querySelector("nav").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
     }
-    prevScrollpos = currentScrollPos;
 }
 
 // smooth back to top for safari 
