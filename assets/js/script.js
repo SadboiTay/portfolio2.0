@@ -168,3 +168,21 @@ const hoverChecker = setInterval(() => {
         $('.socials-about').removeClass('animate-hover')
     }
 }, 100)
+
+// animate contact section in
+var contactTl = gsap.timeline();
+contactTl
+    .from('.email-block', {
+        duration: 1,
+        ease: 'power3',
+        y: '100%',
+        opacity: 0
+    })
+
+new ScrollMagic.Scene({
+    triggerElement: '.contact-section',
+    triggerHook: .75
+})
+    .setTween(contactTl)
+    // .addIndicators()
+    .addTo(controller)

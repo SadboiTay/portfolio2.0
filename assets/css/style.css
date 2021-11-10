@@ -403,6 +403,8 @@ section {
 
 .email-block {
     text-align: center;
+    min-height: 13vh;
+    overflow: hidden;
 }
 
 .email-address {
