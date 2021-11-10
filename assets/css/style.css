@@ -594,7 +594,7 @@ footer h5 {
     }
     
     .project-card {
-        width: 94%;
+        width: 100%;
     }
 
     .about-section {
@@ -604,13 +604,13 @@ footer h5 {
     .about-graphics-container {
         position: absolute;
         min-height: 50vh;
-        right: 0;
-        top: 50%;
+        right: -10%;
+        top: 45%;
         transform: translateY(-50%);
         width: 60%;
     }
 
     .about-text-wrap {
-        width: 50%;
+        width: 55%;
     }
 }
