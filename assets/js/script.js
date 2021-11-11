@@ -4,7 +4,7 @@ const controller = new ScrollMagic.Controller();
 // navbar scroll hide
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
-    if ($(window).width() < 950){
+    if ($(window).width() < 950) {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
             document.querySelector("nav").style.top = "0";
@@ -19,7 +19,7 @@ window.onscroll = function () {
 function scrollToSmoothly(pos, time) {
     var currentPos = window.pageYOffset;
     var start = null;
-    if(time == null) time = 500;
+    if (time == null) time = 500;
     pos = +pos, time = +time;
     window.requestAnimationFrame(function step(currentTime) {
         start = !start ? currentTime : start;
@@ -104,10 +104,10 @@ $('.nav-links').click(() => {
 })
 
 //
-// Quote 1
+// QUOTES ANIMATIONS
 //
 
-console.log(`poly is ${document.querySelector('#q1-polygon').getTotalLength()}`)
+console.log(`poly is ${document.querySelector('#q2-polygon-small').getTotalLength()}`)
 
 // Q1 timeline
 const quote1Tl = gsap.timeline();
@@ -136,13 +136,55 @@ quote1Tl
 
 // Q1 scroll
 new ScrollMagic.Scene({
-    triggerElement: '.quote-1',
+    triggerElement: '.quote-1-section',
     triggerHook: 0.5,
     duration: 650
 })
     .setTween(quote1Tl)
     // .addIndicators()
     .addTo(controller);
+
+//  Q2 Timeline
+const quote2Tl = gsap.timeline()
+quote2Tl
+    .from('#q2-l1', {
+        duration: 1,
+        opacity: 0,
+        y: '-100%',
+        ease: 'power3'
+    })
+    .to('#q2-polygon-big', {
+        duration: 1,
+        strokeDashoffset: 0,
+        ease: 'power3'
+    }, '<+.5')
+    .to('#q2-polygon-small', {
+        duration: 1,
+        strokeDashoffset: 0,
+        ease: 'power3'
+    }, '<')
+    .from('#q2-credit', {
+        duration: .5,
+        opacity: 0,
+        ease: 'power3'
+    })
+
+// Q2 scroll
+new ScrollMagic.Scene({
+    triggerElement: '.quote-2-section',
+    triggerHook: 0.5,
+    duration: 650
+})
+    .setTween(quote2Tl)
+    // .addIndicators()
+    .addTo(controller);
+
+
+
+
+// 
+// END QUOTES ANIMATIONS 
+// 
 
 // scrollmagic project revealer
 let projectRevealerElements = document.getElementsByClassName('project-revealer');
@@ -203,7 +245,7 @@ const hoverChecker = setInterval(() => {
     if (gsap.getProperty(linkedInEl, 'opacity') === 1) {
         $('.socials-about').addClass('animate-hover')
     }
-    if (gsap.getProperty(linkedInEl, 'opacity') <.9) {
+    if (gsap.getProperty(linkedInEl, 'opacity') < .9) {
         $('.socials-about').removeClass('animate-hover')
     }
 }, 100)

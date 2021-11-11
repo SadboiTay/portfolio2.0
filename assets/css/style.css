@@ -221,13 +221,6 @@ nav {
     max-width: 500px;
 }
 
-#q1-polygon {
-    stroke-dasharray: 1700;
-    stroke-dashoffset: 1666;
-    stroke-width: 25;
-    stroke: var(--Palette2)
-}
-
 .quote-text {
     font-family: 'League Gothic';
     font-style: italic;
@@ -237,6 +230,27 @@ nav {
 .quote-credit {
     font-family: 'League Gothic';
     fill: #606060;
+}
+
+#q1-polygon {
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1666;
+    stroke-width: 25;
+    stroke: var(--Palette2)
+}
+
+#q2-polygon-big {
+    stroke-dasharray: 1772;
+    stroke-dashoffset: 1772;
+    stroke-width: 25;
+    stroke: var(--Palette3)
+}
+
+#q2-polygon-small {
+    stroke-dasharray: 1616;
+    stroke-dashoffset: 1616;
+    stroke-width: 25;
+    stroke: var(--Palette3)
 }
 
 #quote-2 {
