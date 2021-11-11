@@ -176,7 +176,7 @@ nav {
     align-items: center;
     text-align: center;
     line-height: 1.5;
-    min-height: 100vh;
+    min-height: 90vh;
     /* border-bottom: 1px dashed var(--Palette1); */
 }
 
@@ -196,7 +196,7 @@ nav {
 }
 
 .quotes {
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,7 +210,6 @@ nav {
 #q1-polygon {
     stroke-dasharray: 1700;
     stroke-dashoffset: 1666;
-    stroke-linejoin: miter;
 }
 
 .section-title {
@@ -229,7 +228,6 @@ nav {
     font-family: open sans, sans-serif;
     /* border-bottom: 1px dashed var(--Palette2); */
     color: white;
-    padding-top: 10vh;
     margin-bottom: 35vh;
 }
 

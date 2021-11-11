@@ -129,7 +129,7 @@ quote1Tl
         ease: 'power3'
     }, '<+.1')
     .from('#q1-credit', {
-        duration: 1,
+        duration: .5,
         opacity: 0,
         ease: 'power3'
     })
@@ -138,10 +138,10 @@ quote1Tl
 new ScrollMagic.Scene({
     triggerElement: '.quote-1',
     triggerHook: 0.5,
-    duration: 1000
+    duration: 650
 })
     .setTween(quote1Tl)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
 // scrollmagic project revealer
