@@ -176,7 +176,7 @@ new ScrollMagic.Scene({
     duration: 900
 })
     .setTween(quote2Tl)
-    .addIndicators()
+    // .addIndicators()
     .addTo(controller);
 
 
