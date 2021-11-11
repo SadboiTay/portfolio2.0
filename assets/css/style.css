@@ -200,8 +200,12 @@ nav {
     stroke-width: 5px;
 }
 
-.quotes {
-    min-height: 80vh;
+/*  */
+/* QUOTES */
+/*  */
+
+.quote-section {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,14 +216,15 @@ nav {
     fill: var(--PaletteGrey);
 }
 
-#quote-1 {
+.quote-svg {
     width: 80%;
+    max-width: 500px;
 }
 
 #q1-polygon {
     stroke-dasharray: 1700;
     stroke-dashoffset: 1666;
-    stroke-width: 30;
+    stroke-width: 25;
     stroke: var(--Palette2)
 }
 
@@ -233,6 +238,14 @@ nav {
     font-family: 'League Gothic';
     fill: #606060;
 }
+
+#quote-2 {
+    transform: translateX(3%);
+}
+
+/*  */
+/* END QUOTES */
+/*  */
 
 .section-title {
     padding: 10px;
@@ -250,7 +263,6 @@ nav {
     font-family: open sans, sans-serif;
     /* border-bottom: 1px dashed var(--Palette2); */
     color: white;
-    margin-bottom: 35vh;
 }
 
 .project-section h1 {
