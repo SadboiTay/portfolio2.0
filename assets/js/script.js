@@ -150,16 +150,16 @@ quote2Tl
     .from('#q2-l1', {
         duration: 1,
         opacity: 0,
-        y: '-100%',
+        y: '-150%',
         ease: 'power3'
     })
     .to('#q2-polygon-big', {
-        duration: 1,
+        duration: 1.5,
         strokeDashoffset: 0,
         ease: 'power3'
     }, '<+.5')
     .to('#q2-polygon-small', {
-        duration: 1,
+        duration: 1.5,
         strokeDashoffset: 0,
         ease: 'power3'
     }, '<')
@@ -173,10 +173,10 @@ quote2Tl
 new ScrollMagic.Scene({
     triggerElement: '.quote-2-section',
     triggerHook: 0.5,
-    duration: 650
+    duration: 900
 })
     .setTween(quote2Tl)
-    // .addIndicators()
+    .addIndicators()
     .addTo(controller);
 
 
