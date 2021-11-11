@@ -1,4 +1,10 @@
 @import 'https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans:300i,400,700';
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/LeagueGothic-Regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     padding: 0;
@@ -12,7 +18,7 @@ html {
 }
 
 :root {
-    --PaletteGrey: #070707;
+    --PaletteGrey: #0c0c0c;
     --Palette1: #E7DBB3;
     --Palette2: #DE7254;
     --Palette3: #2FC6A8;
@@ -64,7 +70,7 @@ nav {
     justify-content: center;
     height: 50px;
     width: 45px;
-    transition: all 1s cubic-bezier(1,.02,0,.96);
+    transition: all 1s cubic-bezier(1, .02, 0, .96);
     cursor: pointer;
 }
 
@@ -93,7 +99,6 @@ nav {
 }
 
 #burger-top {
-    
     transform: translateY(-13px);
 }
 
@@ -182,7 +187,7 @@ nav {
 
 .intro-text {
     margin-top: 30vh;
-    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-weight: 450;
 }
 
@@ -203,6 +208,10 @@ nav {
     /* background-color: gray; */
 }
 
+.quote-cutters {
+    fill: var(--PaletteGrey);
+}
+
 #quote-1 {
     width: 80%;
 }
@@ -210,6 +219,19 @@ nav {
 #q1-polygon {
     stroke-dasharray: 1700;
     stroke-dashoffset: 1666;
+    stroke-width: 30;
+    stroke: var(--Palette2)
+}
+
+.quote-text {
+    font-family: 'League Gothic';
+    font-style: italic;
+    fill: white;
+}
+
+.quote-credit {
+    font-family: 'League Gothic';
+    fill: #606060;
 }
 
 .section-title {
@@ -310,7 +332,9 @@ nav {
 }
 
 /*  */
+
 /* NEW PORTAL SCENE */
+
 /*  */
 
 #portal-scene {
@@ -355,7 +379,9 @@ nav {
 }
 
 /*  */
+
 /* END NEW PORTAL SCENE */
+
 /*  */
 
 .about-title-container {
@@ -400,15 +426,12 @@ nav {
     margin: 0 1.5rem 1.5rem 1.5rem;
 }
 
-.about-text2, 
-.about-text3,
-.about-text4 {
+.about-text2, .about-text3, .about-text4 {
     font-family: open sans, sans serif;
     font-size: .9rem;
 }
 
-.about-text2, 
-.about-text3 {
+.about-text2, .about-text3 {
     color: var(--Palette5);
 }
 
@@ -428,7 +451,7 @@ nav {
 
 .email-address {
     font-size: 2.25rem;
-    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     text-transform: uppercase;
     font-weight: 350;
     transition: all .5s ease-in-out;
@@ -436,8 +459,7 @@ nav {
     text-decoration: none;
 }
 
-.email-address:hover ~ .email-domain,
-.email-domain:hover {
+.email-address:hover~.email-domain, .email-domain:hover {
     border-bottom: 1px solid var(--Palette3);
 }
 
@@ -446,8 +468,7 @@ nav {
     border-bottom: 1px solid var(--Palette4);
 }
 
-.contact-section h1,
-footer h5 {
+.contact-section h1, footer h5 {
     text-align: center;
     font-weight: 300;
 }
@@ -479,7 +500,7 @@ footer {
     animation: double-bounce 3s ease-in forwards infinite;
 }
 
-#backtotop-icosa:hover > #backtotop-arrow {
+#backtotop-icosa:hover>#backtotop-arrow {
     animation: bounce .5s ease forwards infinite;
 }
 
@@ -547,25 +568,30 @@ footer h5 {
 }
 
 /*  */
-/*  */
-/*  */
-/* MEDA QUERIES */
-/*  */
-/*  */
+
 /*  */
 
-@media screen and (min-width:  768px) {
+/*  */
+
+/* MEDA QUERIES */
+
+/*  */
+
+/*  */
+
+/*  */
+
+@media screen and (min-width : 768px) {
     html {
         font-size: 20px;
     }
 }
 
-@media screen and (min-width:  950px) {
+@media screen and (min-width : 950px) {
     .main-wrap {
         width: 80%;
         margin: 0 auto;
     }
-
     nav {
         background-color: initial;
         height: initial;
@@ -575,7 +601,6 @@ footer h5 {
         transition: top 0.3s;
         z-index: 99;
     }
-    
     .logo {
         margin-left: initial;
         position: fixed;
@@ -583,41 +608,35 @@ footer h5 {
         left: 2vw;
         color: var(--Palette1);
     }
-    
     .logo h1 {
         font-weight: 300;
         font-size: 50px;
     }
-    
     .menu-btn {
         position: fixed;
         margin-right: initial;
         top: 3vh;
         right: 2vw;
         width: 45px;
-        transition: all 1s cubic-bezier(1,.02,0,.96);
+        transition: all 1s cubic-bezier(1, .02, 0, .96);
         cursor: pointer;
     }
 }
 
-@media screen and (min-width:  1200px) {
+@media screen and (min-width : 1200px) {
     html {
         font-size: 24px;
     }
-
     .main-wrap {
         width: 70%;
         margin: 0 auto;
     }
-    
     .project-card {
         width: 100%;
     }
-
     .about-section {
         position: relative;
     }
-
     .about-graphics-container {
         position: absolute;
         min-height: 50vh;
@@ -626,7 +645,6 @@ footer h5 {
         transform: translateY(-50%);
         width: 60%;
     }
-
     .about-text-wrap {
         width: 55%;
     }
