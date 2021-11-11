@@ -1,4 +1,5 @@
 let menuOpen = false;
+const controller = new ScrollMagic.Controller();
 
 // navbar scroll hide
 var prevScrollpos = window.pageYOffset;
@@ -102,8 +103,48 @@ $('.nav-links').click(() => {
     $('body').toggleClass('hidden');
 })
 
+//
+// Quote 1
+//
+
+console.log(`poly is ${document.querySelector('#q1-polygon').getTotalLength()}`)
+
+// Q1 timeline
+const quote1Tl = gsap.timeline();
+quote1Tl
+    .to('#q1-polygon', {
+        duration: 1,
+        strokeDashoffset: 0
+    })
+    .from('#q1-l1', {
+        duration: 1,
+        x: '50%',
+        opacity: 0,
+        ease: 'power3'
+    }, '<')
+    .from('#q1-l2', {
+        duration: 1,
+        x: '-50%',
+        opacity: 0,
+        ease: 'power3'
+    }, '<+.1')
+    .from('#q1-credit', {
+        duration: 1,
+        opacity: 0,
+        ease: 'power3'
+    })
+
+// Q1 scroll
+new ScrollMagic.Scene({
+    triggerElement: '.quote-1',
+    triggerHook: 0.5,
+    duration: 1000
+})
+    .setTween(quote1Tl)
+    .addIndicators()
+    .addTo(controller);
+
 // scrollmagic project revealer
-const controller = new ScrollMagic.Controller();
 let projectRevealerElements = document.getElementsByClassName('project-revealer');
 let projectContentElements = document.getElementsByClassName('project-content')
 for (let i = 0; i < projectRevealerElements.length; i++) {

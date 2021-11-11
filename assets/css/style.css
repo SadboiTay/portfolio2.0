@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans:300i,400,700';
+
 * {
     padding: 0;
     margin: 0;
@@ -185,8 +186,31 @@ nav {
     font-weight: 450;
 }
 
-section {
-    margin-bottom: 20vh;
+.jumbo-icosa {
+    stroke: var(--Palette3);
+    max-width: 400px;
+    animation: color-stroke-wheel 14s forwards infinite;
+    width: 50%;
+    fill: white;
+    stroke-width: 5px;
+}
+
+.quotes {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: gray; */
+}
+
+#quote-1 {
+    width: 80%;
+}
+
+#q1-polygon {
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1666;
+    stroke-linejoin: miter;
 }
 
 .section-title {
@@ -206,6 +230,7 @@ section {
     /* border-bottom: 1px dashed var(--Palette2); */
     color: white;
     padding-top: 10vh;
+    margin-bottom: 35vh;
 }
 
 .project-section h1 {
@@ -283,6 +308,7 @@ section {
     /* border-top: 1px dashed var(--Palette3); */
     /* border-bottom: 1px dashed var(--Palette3); */
     color: var(--Palette3);
+    margin-bottom: 35vh;
 }
 
 /*  */
@@ -352,14 +378,6 @@ section {
     }
 }
 
-.jumbo-icosa {
-    stroke: var(--Palette3);
-    max-width: 400px;
-    animation: color-stroke-wheel 14s forwards infinite;
-    width: 50%;
-    fill: white;
-}
-
 @keyframes color-stroke-wheel {
     25% {
         stroke: var(--Palette2);
@@ -394,6 +412,10 @@ section {
 .about-text2, 
 .about-text3 {
     color: var(--Palette5);
+}
+
+.contact-section {
+    margin-bottom: 35vh;
 }
 
 .contact-section .section-title {
