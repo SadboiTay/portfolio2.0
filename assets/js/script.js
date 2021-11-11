@@ -70,8 +70,6 @@ const animateMenuPage = () => {
 
 // click menu button listener
 $('.menu-btn').click(() => {
-    // create timeline
-
     if (!menuOpen) {
         // animate menu btn
         $('.menu-btn').toggleClass('open');
