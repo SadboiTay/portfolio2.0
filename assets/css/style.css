@@ -151,7 +151,7 @@ nav {
 }
 
 .menu-page ul {
-    margin-top: 15vh;
+    margin-top: 25vh;
 }
 
 .nav-links {
@@ -180,10 +180,9 @@ nav {
 }
 
 .intro-text {
-    margin-top: 35vh;
-    padding: .5rem;
+    margin-top: 30vh;
     font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    font-weight: 350;
+    font-weight: 450;
 }
 
 section {
