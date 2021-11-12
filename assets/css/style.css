@@ -12,6 +12,33 @@
     box-sizing: border-box;
 }
 
+::selection {
+    color: white;
+    background: var(--Palette4);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--Palette1) 0%, var(--Palette2) 33%, var(--Palette3) 66%, var(--Palette4) 100%);
+    /* border-radius: 10px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, var(--Palette1) 25%, var(--Palette2) 0, var(--Palette2) 50%, var(--Palette3) 0, var(--Palette3) 75%, var(--Palette4) 0);
+}
+
 html {
     line-height: 1.4;
     scroll-behavior: smooth;
