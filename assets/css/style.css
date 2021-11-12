@@ -201,7 +201,9 @@ nav {
 }
 
 /*  */
+
 /* QUOTES */
+
 /*  */
 
 .quote-section {
@@ -258,7 +260,9 @@ nav {
 }
 
 /*  */
+
 /* END QUOTES */
+
 /*  */
 
 .section-title {
@@ -307,6 +311,14 @@ nav {
     letter-spacing: .15rem;
     font-size: 1.1rem;
     font-family: inconsolata, monospace;
+    /* background-color: #FFFFFF;
+    background-image: linear-gradient(270deg, var(--Palette4), var(--Palette2));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    width: fit-content; */
 }
 
 .project-content {
@@ -607,13 +619,13 @@ footer h5 {
 
 /*  */
 
-@media screen and (min-width : 768px) {
+@media screen and (min-width: 768px) {
     html {
         font-size: 20px;
     }
 }
 
-@media screen and (min-width : 950px) {
+@media screen and (min-width: 950px) {
     .main-wrap {
         width: 80%;
         margin: 0 auto;
@@ -649,7 +661,7 @@ footer h5 {
     }
 }
 
-@media screen and (min-width : 1200px) {
+@media screen and (min-width: 1200px) {
     html {
         font-size: 24px;
     }
