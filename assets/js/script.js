@@ -129,16 +129,16 @@ quote1Tl
         ease: 'power3'
     }, '<+.1')
     .from('#q1-credit', {
-        duration: .5,
+        duration: 1,
         opacity: 0,
         ease: 'power3'
-    })
+    }, '<+.5')
 
 // Q1 scroll
 new ScrollMagic.Scene({
     triggerElement: '.quote-1-section',
     triggerHook: 0.5,
-    duration: 650
+    duration: 850
 })
     .setTween(quote1Tl)
     // .addIndicators()
@@ -164,16 +164,16 @@ quote2Tl
         ease: 'power3'
     }, '<')
     .from('#q2-credit', {
-        duration: .5,
+        duration: 1,
         opacity: 0,
         ease: 'power3'
-    })
+    }, '<+.5')
 
 // Q2 scroll
 new ScrollMagic.Scene({
     triggerElement: '.quote-2-section',
     triggerHook: 0.5,
-    duration: 900
+    duration: 850
 })
     .setTween(quote2Tl)
     // .addIndicators()
