@@ -237,10 +237,10 @@ nav {
     align-items: center;
     text-align: center;
     line-height: 1.5;
-    height: 100vh;
-    position: relative;
+    height: 80vh;
+    /* position: relative; */
     /* border-bottom: 1px dashed var(--Palette1); */
-    background-color: var(--Palette6);
+    /* background-color: var(--Palette6); */
 }
 
 .intro-text {
@@ -263,7 +263,7 @@ nav {
     max-width: 100px;
     position: absolute;
     left: 8vw;
-    bottom: 0;
+    bottom: 4vh;
 }
 
 #down-arrow path {
