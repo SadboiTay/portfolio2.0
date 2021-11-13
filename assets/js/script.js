@@ -259,20 +259,29 @@ const hoverChecker = setInterval(() => {
     }
 }, 100)
 
-// animate contact section in
-var contactTl = gsap.timeline();
-contactTl
+// 
+// CONTACT SECTION
+// 
+
+// animate cta-btn out and email section in
+var emailBlockTl = gsap.timeline();
+emailBlockTl
+    .to('#cta-btn', {
+        duration: .4,
+        ease: 'power3',
+        opacity: 0
+    })
     .from('.email-block', {
         duration: 1,
         ease: 'power3',
         y: '100%',
         opacity: 0
-    })
+    }, '<')
 
 new ScrollMagic.Scene({
     triggerElement: '.contact-section',
     triggerHook: .75
 })
-    .setTween(contactTl)
+    .setTween(emailBlockTl)
     // .addIndicators()
     .addTo(controller)

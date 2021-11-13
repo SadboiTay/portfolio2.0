@@ -435,6 +435,7 @@ nav {
 .about-section {
     color: var(--Palette3);
     padding-top: 10vh;
+    min-height: 100vh;
 }
 
 /*  */
@@ -542,7 +543,7 @@ nav {
 }
 
 .contact-section {
-    margin-bottom: 35vh;
+    padding-top: 10vh;
 }
 
 .contact-section .section-title {
