@@ -202,13 +202,45 @@ nav {
     font-size: 3rem;
 }
 
+#cta-btn {
+    width: 20%;
+    max-width: 100px;
+    position: fixed;
+    right: 6vw;
+    bottom: 4vh;
+    transform: rotate(10deg);
+    z-index: 100;
+}
+
+#cta-btn-polygon {
+    stroke: var(--Palette4);
+    stroke-width: 7;
+    transition: all .3s ease-out;
+    fill: var(--PaletteGrey);
+}
+
+#cta-btn-text {
+    fill: white;
+    font-family: iconsolata, monospace;
+    font-size: 36px;
+}
+
+#cta-btn:hover > #cta-btn-polygon {
+    stroke: white;
+    fill: var(--PaletteGrey);
+}
+#cta-btn:hover > #cta-btn-text {
+    fill: white;
+}
+
 .jumbotron {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     line-height: 1.5;
-    min-height: 90vh;
+    min-height: 95vh;
+    position: relative;
     /* border-bottom: 1px dashed var(--Palette1); */
 }
 
@@ -223,8 +255,16 @@ nav {
     max-width: 400px;
     animation: color-stroke-wheel 14s forwards infinite;
     width: 50%;
-    fill: white;
+    /* fill: url(#jumbo-icosa-gradient); */
     stroke-width: 5px;
+}
+
+#down-arrow {
+    width: 20%;
+    max-width: 100px;
+    position: absolute;
+    left: 8vw;
+    bottom: 0;
 }
 
 /*  */

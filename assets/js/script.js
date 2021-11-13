@@ -43,7 +43,11 @@ menuPageTL.to('main', {
     duration: 0.5,
     x: '-100vw',
     ease: 'back.in'
-})
+    })
+    .to('#cta-btn', {
+        duration: 0.1,
+        opacity: 0
+    }, '<')
     .to('.menu-page-slider', {
         stagger: 0.2,
         duration: 1,
