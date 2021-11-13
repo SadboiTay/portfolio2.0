@@ -39,12 +39,17 @@ function scrollToSmoothly(pos, time) {
 
 // create menu page animation timeline
 var menuPageTL = gsap.timeline({ paused: true, reversed: true });
-menuPageTL.to('main', {
+menuPageTL
+    .to('main', {
     duration: 0.5,
     x: '-100vw',
     ease: 'back.in'
     })
     .to('#cta-btn', {
+        duration: 0.1,
+        opacity: 0
+    }, '<')
+    .to('#down-arrow', {
         duration: 0.1,
         opacity: 0
     }, '<')
@@ -68,9 +73,9 @@ menuPageTL.to('main', {
         ease: 'back'
     }, '>-0.2')
 
-const animateMenuPage = () => {
+const animateMenuPage = async () => {
     // ternary operator - if reversed, play; else reverse
-    menuPageTL.reversed() ? menuPageTL.play() : menuPageTL.reverse();
+    await menuPageTL.reversed() ? menuPageTL.play() : menuPageTL.reverse();
 }
 
 // click menu button listener
