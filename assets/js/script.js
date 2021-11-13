@@ -116,7 +116,7 @@ $('.nav-links').click(() => {
 // QUOTES ANIMATIONS
 //
 
-console.log(`poly is ${document.querySelector('#q2-polygon-small').getTotalLength()}`)
+console.log(`poly is ${document.querySelector('#q3-polygon-1').getTotalLength()}`)
 
 // Q1 timeline
 const quote1Tl = gsap.timeline();
@@ -188,8 +188,39 @@ new ScrollMagic.Scene({
     // .addIndicators()
     .addTo(controller);
 
+//  Q3 Timeline
+const quote3Tl = gsap.timeline()
+quote3Tl
+    .from('#q3-l1', {
+        duration: 1,
+        x: '-38%',
+        ease: 'power3'
+    })
+    .from('#q3-l2', {
+        duration: 1,
+        x: '38%',
+        ease: 'power3'
+    }, '<+.1')
+    .to('.q3-poly', {
+        duration: 1.5,
+        strokeDashoffset: 0,
+        ease: 'power3'
+    }, '<+.4')
+    .from('#q3-credit', {
+        duration: 1,
+        opacity: 0,
+        ease: 'power3'
+    }, '<+.5')
 
-
+    // Q2 scroll
+new ScrollMagic.Scene({
+    triggerElement: '.quote-3-section',
+    triggerHook: 0.5,
+    duration: 850
+})
+    .setTween(quote3Tl)
+    // .addIndicators()
+    .addTo(controller);
 
 // 
 // END QUOTES ANIMATIONS 

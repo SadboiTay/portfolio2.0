@@ -243,9 +243,9 @@ nav {
 }
 
 .intro-text {
-    margin-top: 30vh;
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    font-weight: 450;
+    margin-top: 20vh;
+    font-family: inconsolata, monospace;
+    /* font-weight: 450; */
 }
 
 .jumbo-icosa {
@@ -329,6 +329,14 @@ nav {
     transform: translateX(3%);
 }
 
+#q3-polygon-1,
+#q3-polygon-2 {
+    stroke-dasharray: 1667;
+    stroke-dashoffset: 1667;
+    stroke-width: 25;
+    stroke: var(--Palette4)
+}
+
 /*  */
 
 /* END QUOTES */
@@ -349,8 +357,8 @@ nav {
     justify-content: center;
     align-items: center;
     font-family: open sans, sans-serif;
-    /* border-bottom: 1px dashed var(--Palette2); */
     color: white;
+    padding-top: 10vh;
 }
 
 .project-section h1 {
