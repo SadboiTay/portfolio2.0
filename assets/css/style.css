@@ -241,6 +241,8 @@ nav {
 .intro-text {
     margin-top: 20vh;
     font-family: inconsolata, monospace;
+    font-weight: 450;
+    width: 90%;
 }
 
 .jumbo-icosa {
