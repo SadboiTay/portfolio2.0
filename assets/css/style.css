@@ -718,19 +718,17 @@ footer h5 {
     .logo {
         margin-left: initial;
         position: fixed;
-        top: 2vh;
-        left: 2vw;
+        top: 3vh;
+        left: 3vw;
         color: var(--Palette1);
+        width: 75px;
     }
-    .logo h1 {
-        font-weight: 300;
-        font-size: 50px;
-    }
+
     .menu-btn {
         position: fixed;
         margin-right: initial;
         top: 3vh;
-        right: 2vw;
+        right: 3vw;
         width: 45px;
         transition: all 1s cubic-bezier(1, .02, 0, .96);
         cursor: pointer;
