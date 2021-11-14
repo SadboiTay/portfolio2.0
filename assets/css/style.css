@@ -214,9 +214,9 @@ nav {
 }
 
 #cta-btn-polygon {
-    stroke: var(--Palette4);
+    stroke: var(--Palette1);
     stroke-width: 7;
-    transition: all .5s ease-out;
+    transition: all .3s ease-out;
     fill: var(--PaletteGrey);
 }
 
@@ -226,11 +226,7 @@ nav {
 }
 
 #cta-btn:hover > #cta-btn-polygon {
-    stroke: white;
-    fill: var(--PaletteGrey);
-}
-#cta-btn:hover > .cta-text-path {
-    fill: var(--Palette4);
+    stroke: var(--Palette4);
 }
 
 .jumbotron {
@@ -245,7 +241,6 @@ nav {
 .intro-text {
     margin-top: 20vh;
     font-family: inconsolata, monospace;
-    /* font-weight: 450; */
 }
 
 .jumbo-icosa {
@@ -263,11 +258,16 @@ nav {
     position: absolute;
     left: 8vw;
     bottom: 4vh;
-    animation: double-bounce 4s infinite ease-in;
+    animation: double-bounce 4s infinite ease-in; 
+}
+
+#down-arrow:hover > path {
+    fill: var(--Palette2);
 }
 
 #down-arrow path {
-    fill: var(--Palette4);
+    transition: all .3s ease-out;
+    fill: var(--Palette1);
 }
 
 /*  */
@@ -500,7 +500,6 @@ nav {
 /*  */
 
 .about-title-container {
-    /* margin-top: 5rem; */
     display: flex;
     justify-content: center;
 }
@@ -751,12 +750,13 @@ footer h5 {
     }
     .about-section {
         position: relative;
+        /* background-color: wheat; */
     }
     .about-graphics-container {
         position: absolute;
         min-height: 50vh;
         right: -10%;
-        top: 45%;
+        top: 30%;
         transform: translateY(-50%);
         width: 60%;
     }
