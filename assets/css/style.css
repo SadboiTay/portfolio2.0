@@ -47,7 +47,7 @@ html {
 
 :root {
     --PaletteGrey: #0c0c0c;
-    --Palette1: #E3B8AA;
+    --Palette1: #C8A396;
     --Palette2: #DE7254;
     --Palette3: #2FC6A8;
     --Palette4: #AE1E4E;
@@ -87,9 +87,7 @@ nav {
 }
 
 #th-logo-svg path {
-    /* stroke-width: 7px; */
-    /* stroke: var(--Palette1); */
-    /* fill: black; */
+    fill: var(--Palette1);
 }
 
 .menu-btn {
@@ -206,7 +204,7 @@ nav {
 }
 
 #cta-btn {
-    width: 20%;
+    width: 18%;
     max-width: 100px;
     position: fixed;
     right: 6vw;
