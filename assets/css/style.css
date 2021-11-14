@@ -47,7 +47,7 @@ html {
 
 :root {
     --PaletteGrey: #0c0c0c;
-    --Palette1: #E7DBB3;
+    --Palette1: #E3B8AA;
     --Palette2: #DE7254;
     --Palette3: #2FC6A8;
     --Palette4: #AE1E4E;
@@ -82,12 +82,14 @@ nav {
 
 .logo {
     margin-left: 7vw;
-    color: var(--Palette1);
+    width:55px;
+    transform: translateY(3px);
 }
 
-.logo h1 {
-    font-weight: 300;
-    font-size: 30px;
+#th-logo-svg path {
+    /* stroke-width: 7px; */
+    /* stroke: var(--Palette1); */
+    /* fill: black; */
 }
 
 .menu-btn {
