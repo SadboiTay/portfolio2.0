@@ -392,6 +392,7 @@ nav {
     letter-spacing: .15rem;
     font-size: 1.1rem;
     font-family: inconsolata, monospace;
+    text-align: center;
     /* background-color: #FFFFFF;
     background-image: linear-gradient(270deg, var(--Palette4), var(--Palette2));
     background-size: 100%;
@@ -413,10 +414,21 @@ nav {
 }
 
 .project-body p {
-    margin-top: .5rem;
+    margin-top: 1rem;
     font-size: .85rem;
     letter-spacing: .03rem;
     line-height: 1.5;
+}
+
+.project-img-wrap {
+    margin-top: 1rem;
+}
+
+.project-img-wrap img {
+    width: 65%;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
 }
 
 #prashant-link {
