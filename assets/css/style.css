@@ -260,7 +260,8 @@ nav {
     position: absolute;
     left: 8vw;
     bottom: 4vh;
-    animation: double-bounce 4s infinite ease-in; 
+    animation: double-bounce 4s infinite ease-in;
+    z-index: 98;
 }
 
 #down-arrow:hover > path {
