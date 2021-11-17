@@ -374,6 +374,7 @@ nav {
     margin: 10px 0;
     position: relative;
     overflow: hidden;
+    text-align: center;
 }
 
 .project-revealer {
