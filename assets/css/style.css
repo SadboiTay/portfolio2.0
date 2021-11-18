@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans:300i,400,700';
+
 @font-face {
     font-family: 'League Gothic';
     src: url('../fonts/LeagueGothic-Regular.woff');
@@ -82,7 +83,7 @@ nav {
 
 .logo {
     margin-left: 7vw;
-    width:55px;
+    width: 55px;
     transform: translateY(3px);
 }
 
@@ -114,9 +115,11 @@ nav {
     25% {
         background-color: var(--Palette2);
     }
+
     50% {
         background-color: var(--Palette3);
     }
+
     75% {
         background-color: var(--Palette4);
     }
@@ -225,7 +228,7 @@ nav {
     fill: white;
 }
 
-#cta-btn:hover > #cta-btn-polygon {
+#cta-btn:hover>#cta-btn-polygon {
     stroke: var(--Palette4);
 }
 
@@ -264,7 +267,7 @@ nav {
     z-index: 98;
 }
 
-#down-arrow:hover > path {
+#down-arrow:hover>path {
     fill: var(--Palette2);
 }
 
@@ -377,7 +380,8 @@ nav {
     position: relative;
 }
 
-.project-revealer {
+.project-revealer,
+.project-revealer-odd {
     background-color: var(--Palette2);
     position: absolute;
     top: 0;
@@ -404,7 +408,8 @@ nav {
     width: fit-content; */
 }
 
-.project-content {
+.project-content,
+.project-content-odd {
     margin: 1rem;
     transform: translateY(120%);
     opacity: 0;
@@ -535,9 +540,11 @@ nav {
     25% {
         fill: var(--Palette2);
     }
+
     50% {
         fill: var(--Palette3);
     }
+
     75% {
         fill: var(--Palette4);
     }
@@ -547,9 +554,11 @@ nav {
     25% {
         stroke: var(--Palette2);
     }
+
     50% {
         stroke: var(--Palette3);
     }
+
     75% {
         stroke: var(--Palette4);
     }
@@ -649,9 +658,11 @@ footer {
     0% {
         transform: translateY(0%);
     }
+
     50% {
         transform: translateY(-14%);
     }
+
     100% {
         transform: translateY(0%);
     }
@@ -661,18 +672,23 @@ footer {
     0% {
         transform: translateY(0%);
     }
+
     50% {
         transform: translateY(0%);
     }
+
     62.5% {
         transform: translateY(-14%);
     }
+
     75% {
         transform: translateY(0%);
     }
+
     87.5% {
         transform: translateY(-14%);
     }
+
     100% {
         transform: translateY(0%);
     }
@@ -732,10 +748,12 @@ footer h5 {
     html {
         font-size: 24px;
     }
+
     .main-wrap {
         width: 80%;
         margin: 0 auto;
     }
+
     nav {
         background-color: initial;
         height: initial;
@@ -745,6 +763,7 @@ footer h5 {
         transition: top 0.3s;
         z-index: 99;
     }
+
     .logo {
         margin-left: initial;
         position: fixed;
@@ -769,6 +788,7 @@ footer h5 {
     html {
         font-size: 26px;
     }
+
     .main-wrap {
         width: 70%;
         margin: 0 auto;
@@ -777,35 +797,37 @@ footer h5 {
     .project-card {
         width: 100%;
     }
-    
+
     .project-footer {
         margin-top: 1rem;
     }
 
-    .project-body {
+    .project-body,
+    .project-body-odd {
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
         align-items: center;
-    }
-
-    .project-body-flipped {
+        flex-direction: row;
+        justify-content: center;
         flex-direction: row;
     }
     
+    .project-body-odd {
+        flex-direction: row-reverse;
+    }
+
     .project-p {
         margin-top: 1rem;
         font-size: .85rem;
         letter-spacing: .03rem;
         line-height: 1.5;
         width: 40%;
+        text-align: left;
+    }
+
+    .project-p-odd {
         text-align: right;
     }
 
-    .project-p-flipped {
-        text-align: left;
-    }
-    
     .project-img-wrap {
         margin-top: 2rem;
         width: 450px;
@@ -815,14 +837,14 @@ footer h5 {
         margin-top: 2rem;
         width: 750px;
     }
-    
+
     .iphone-mockup {
         width: 100%;
         /* max-width: 350px; */
         display: block;
         margin: 0 auto;
     }
-    
+
     .laptop-mockup {
         width: 90%;
         max-width: 750px;
@@ -834,6 +856,7 @@ footer h5 {
         position: relative;
         /* background-color: wheat; */
     }
+
     .about-graphics-container {
         position: absolute;
         min-height: 50vh;
@@ -842,6 +865,7 @@ footer h5 {
         transform: translateY(-50%);
         width: 60%;
     }
+
     .about-text-wrap {
         width: 55%;
     }

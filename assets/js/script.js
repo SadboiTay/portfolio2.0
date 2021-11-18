@@ -212,7 +212,7 @@ quote3Tl
         ease: 'power3'
     }, '<+.5')
 
-    // Q2 scroll
+    // Q3 scroll
 new ScrollMagic.Scene({
     triggerElement: '.quote-3-section',
     triggerHook: 0.5,
@@ -226,21 +226,25 @@ new ScrollMagic.Scene({
 // END QUOTES ANIMATIONS 
 // 
 
+// 
+// PROJECT ANIMATIONS
+// 
+
 // scrollmagic project revealer
-let projectRevealerElements = document.getElementsByClassName('project-revealer');
-let projectContentElements = document.getElementsByClassName('project-content')
-for (let i = 0; i < projectRevealerElements.length; i++) {
+let $projectRevealer = document.getElementsByClassName('project-revealer');
+let $projectContent = document.getElementsByClassName('project-content')
+for (let i = 0; i < $projectRevealer.length; i++) {
     new ScrollMagic.Scene({
-        triggerElement: projectRevealerElements[i],
+        triggerElement: $projectRevealer[i],
         triggerHook: 0.9
     })
         .setTween(gsap.timeline()
-            .to(projectRevealerElements[i], {
+            .to($projectRevealer[i], {
                 duration: 1,
                 x: '-100%',
                 ease: Expo.inOut
             })
-            .to(projectContentElements[i], {
+            .to($projectContent[i], {
                 duration: 0.4,
                 y: '0%',
                 opacity: 1,
@@ -249,6 +253,35 @@ for (let i = 0; i < projectRevealerElements.length; i++) {
         // .addIndicators()
         .addTo(controller);
 }
+
+// scrollmagic project revealer-odd
+let $projectRevealerOdd = document.getElementsByClassName('project-revealer-odd');
+let $projectContentOdd = document.getElementsByClassName('project-content-odd')
+for (let i = 0; i < $projectRevealerOdd.length; i++) {
+    new ScrollMagic.Scene({
+        triggerElement: $projectRevealerOdd[i],
+        triggerHook: 0.9
+    })
+        .setTween(gsap.timeline()
+            .to($projectRevealerOdd[i], {
+                duration: 1,
+                x: '100%',
+                ease: Expo.inOut
+            })
+            .to($projectContentOdd[i], {
+                duration: 0.4,
+                y: '0%',
+                opacity: 1,
+                ease: Expo.inOut
+            }, "<+0.7"))
+        // .addIndicators()
+        .addTo(controller);
+}
+
+
+// 
+// END PROJECT ANIMATIONS
+// 
 
 const portalSceneTl = gsap.timeline();
 portalSceneTl
