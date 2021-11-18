@@ -374,6 +374,7 @@ nav {
     margin: 10px 0;
     overflow: hidden;
     text-align: center;
+    position: relative;
 }
 
 .project-revealer {
@@ -784,17 +785,21 @@ footer h5 {
         align-items: center;
     }
 
-    .project-body:nth-child(odd) {
+    .project-body-flipped {
         flex-direction: row;
     }
     
-    .project-body p {
+    .project-p {
         margin-top: 1rem;
         font-size: .85rem;
         letter-spacing: .03rem;
         line-height: 1.5;
         width: 40%;
         text-align: right;
+    }
+
+    .project-p-flipped {
+        text-align: left;
     }
     
     .project-img-wrap {
