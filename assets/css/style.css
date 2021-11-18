@@ -425,9 +425,16 @@ nav {
     margin-top: 1rem;
 }
 
-.project-img-wrap img {
+.iphone-mockup {
     width: 65%;
     max-width: 350px;
+    display: block;
+    margin: 0 auto;
+}
+
+.laptop-mockup {
+    width: 90%;
+    max-width: 750px;
     display: block;
     margin: 0 auto;
 }
