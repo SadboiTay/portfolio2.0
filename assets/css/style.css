@@ -372,7 +372,6 @@ nav {
     border: 1px solid var(--Palette2);
     width: 90%;
     margin: 10px 0;
-    position: relative;
     overflow: hidden;
     text-align: center;
 }
@@ -718,13 +717,16 @@ footer h5 {
 
 /*  */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 580px) {
     html {
         font-size: 20px;
     }
 }
 
 @media screen and (min-width: 950px) {
+    html {
+        font-size: 24px;
+    }
     .main-wrap {
         width: 80%;
         margin: 0 auto;
@@ -760,15 +762,65 @@ footer h5 {
 
 @media screen and (min-width: 1200px) {
     html {
-        font-size: 24px;
+        font-size: 26px;
     }
     .main-wrap {
         width: 70%;
         margin: 0 auto;
     }
+
     .project-card {
         width: 100%;
     }
+    
+    .project-footer {
+        margin-top: 1rem;
+    }
+
+    .project-body {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-body:nth-child(odd) {
+        flex-direction: row;
+    }
+    
+    .project-body p {
+        margin-top: 1rem;
+        font-size: .85rem;
+        letter-spacing: .03rem;
+        line-height: 1.5;
+        width: 40%;
+        text-align: right;
+    }
+    
+    .project-img-wrap {
+        margin-top: 2rem;
+        width: 450px;
+    }
+
+    #laptop-wrap {
+        margin-top: 2rem;
+        width: 750px;
+    }
+    
+    .iphone-mockup {
+        width: 100%;
+        /* max-width: 350px; */
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .laptop-mockup {
+        width: 90%;
+        max-width: 750px;
+        display: block;
+        margin: 0 auto;
+    }
+
     .about-section {
         position: relative;
         /* background-color: wheat; */
