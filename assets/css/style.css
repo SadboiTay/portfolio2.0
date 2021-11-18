@@ -391,7 +391,7 @@ nav {
 .project-title {
     font-weight: 500;
     letter-spacing: .15rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-family: inconsolata, monospace;
     text-align: center;
     /* background-color: #FFFFFF;
@@ -423,6 +423,10 @@ nav {
 
 .project-img-wrap {
     margin-top: 1rem;
+}
+
+#th-pencil-svg {
+    width: 85%;
 }
 
 .iphone-mockup {
