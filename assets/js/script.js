@@ -244,12 +244,12 @@ for (let i = 0; i < $projectRevealer.length; i++) {
                 x: '-100%',
                 ease: Expo.inOut
             })
-            .to($projectContent[i], {
-                duration: 0.4,
-                y: '0%',
-                opacity: 1,
+            .from($projectContent[i], {
+                duration: 1,
+                x: '100%',
+                opacity: 0,
                 ease: Expo.inOut
-            }, "<+0.7"))
+            }, "<-.1"))
         // .addIndicators()
         .addTo(controller);
 }
@@ -268,12 +268,12 @@ for (let i = 0; i < $projectRevealerOdd.length; i++) {
                 x: '100%',
                 ease: Expo.inOut
             })
-            .to($projectContentOdd[i], {
-                duration: 0.4,
-                y: '0%',
-                opacity: 1,
+            .from($projectContentOdd[i], {
+                duration: 1,
+                x: '-100%',
+                opacity: 0,
                 ease: Expo.inOut
-            }, "<+0.7"))
+            }, "<-.1"))
         // .addIndicators()
         .addTo(controller);
 }

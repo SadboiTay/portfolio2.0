@@ -385,7 +385,7 @@ nav {
     background-color: var(--Palette2);
     position: absolute;
     top: 0;
-    left: 0;
+    left: -25%;
     bottom: 0;
     right: -25%;
     -webkit-backface-visibility: hidden;
@@ -411,8 +411,8 @@ nav {
 .project-content,
 .project-content-odd {
     margin: 1rem;
-    transform: translateY(120%);
-    opacity: 0;
+    /* transform: translateY(120%); */
+    /* opacity: 0; */
 }
 
 .project-footer {
