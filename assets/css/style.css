@@ -189,15 +189,40 @@ nav {
 
 .menu-page ul {
     margin-top: 25vh;
+    width: 100%;
 }
 
 .nav-links {
     list-style: none;
     font-family: inconsolata, monospace;
-    margin: 0 auto;
+    padding: .5rem 0 .5rem 0;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
+    transition: all .3s ease-in;
+    width: 100%;
+}
+
+.nav-links a {
+    width: 100%;
+    text-align: center;
+}
+
+#home-navlink:hover {
+    color: var(--PaletteGrey);
+    background-color: var(--Palette1);
+}
+#projects-navlink:hover {
+    color: var(--PaletteGrey);
+    background-color: var(--Palette2);
+}
+#about-navlink:hover {
+    color: var(--PaletteGrey);
+    background-color: var(--Palette3);
+}
+#contact-navlink:hover {
+    color: var(--PaletteGrey);
+    background-color: var(--Palette4);
 }
 
 .menu-page li a {
@@ -405,7 +430,7 @@ nav {
     font-size: 1rem;
     font-family: inconsolata, monospace;
     text-align: center;
-color: var(--Palette2);
+    color: var(--Palette2);
     /* background-color: #FFFFFF;
     background-image: linear-gradient(270deg, var(--Palette4), var(--Palette2));
     background-size: 100%;
@@ -818,7 +843,7 @@ footer h5 {
         justify-content: center;
         flex-direction: row;
     }
-    
+
     .project-body-odd {
         flex-direction: row-reverse;
     }
