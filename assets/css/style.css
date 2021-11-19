@@ -18,6 +18,10 @@
     background: var(--Palette4);
 }
 
+/*  */
+/* SCROLLBAR */
+/*  */
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -40,6 +44,10 @@
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(to bottom, var(--Palette1) 25%, var(--Palette2) 0, var(--Palette2) 50%, var(--Palette3) 0, var(--Palette3) 75%, var(--Palette4) 0);
 }
+
+/*  */
+/* END SCROLLBAR */
+/*  */
 
 html {
     line-height: 1.4;
@@ -212,14 +220,17 @@ nav {
     color: var(--PaletteGrey);
     background-color: var(--Palette1);
 }
+
 #projects-navlink:hover {
     color: var(--PaletteGrey);
     background-color: var(--Palette2);
 }
+
 #about-navlink:hover {
     color: var(--PaletteGrey);
     background-color: var(--Palette3);
 }
+
 #contact-navlink:hover {
     color: var(--PaletteGrey);
     background-color: var(--Palette4);
@@ -261,7 +272,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left;
     line-height: 1.5;
     height: 100vh;
 }
@@ -281,6 +292,148 @@ nav {
     /* fill: url(#jumbo-icosa-gradient); */
     stroke-width: 5px;
 }
+
+/*  */
+/* 3D-ICOSA */
+/*  */
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg);
+        transform: rotateX(360deg) rotateY(720deg) rotateZ(1080deg);
+    }
+}
+
+.icosa-3d {
+    position: relative;
+    transform-style: preserve-3d;
+    transform: scale3d(0.39, 0.39, 0.39);
+    animation: rotate 40s linear infinite;
+    z-index: -1;
+    margin-top: 7rem;
+}
+
+.icosa-3d .side {
+    position: absolute;
+    left: 0;
+    bottom: 10;
+    height: 173.2px;
+    width: 200px;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    background-image: url(../images/icosa-3d/initial.svg);
+    /* background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0idHJpYW5nbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMzNi45MiAyOTEuNzUiPgoJPHBvbHlnb24gcG9pbnRzPSIzMzQuNzUgMjkwLjUgMi4xNyAyOTAuNSAxNjguNDcgMi41IDMzNC43NSAyOTAuNSIgZmlsbD0icmdiYSgyNTUsMTcyLDEzNSwgMC44KSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyLjUiLz4KPC9zdmc+); */
+}
+
+.icosa-3d .side:nth-child(1) {
+    -webkit-transform: translateY(-18.5px) rotateY(72deg) rotateX(52.62deg);
+    transform: translateY(-18.5px) rotateY(72deg) rotateX(52.62deg);
+}
+
+.icosa-3d .side:nth-child(2) {
+    -webkit-transform: translateY(-18.5px) rotateY(144deg) rotateX(52.62deg);
+    transform: translateY(-18.5px) rotateY(144deg) rotateX(52.62deg);
+}
+
+.icosa-3d .side:nth-child(3) {
+    -webkit-transform: translateY(-18.5px) rotateY(216deg) rotateX(52.62deg);
+    transform: translateY(-18.5px) rotateY(216deg) rotateX(52.62deg);
+}
+
+.icosa-3d .side:nth-child(4) {
+    -webkit-transform: translateY(-18.5px) rotateY(288deg) rotateX(52.62deg);
+    transform: translateY(-18.5px) rotateY(288deg) rotateX(52.62deg);
+}
+
+.icosa-3d .side:nth-child(5) {
+    -webkit-transform: translateY(-18.5px) rotateY(360deg) rotateX(52.62deg);
+    transform: translateY(-18.5px) rotateY(360deg) rotateX(52.62deg);
+}
+
+.icosa-3d .side:nth-child(6) {
+    -webkit-transform: translateY(361.8px) rotateY(468deg) rotateX(127.38deg);
+    transform: translateY(361.8px) rotateY(468deg) rotateX(127.38deg);
+}
+
+.icosa-3d .side:nth-child(7) {
+    -webkit-transform: translateY(361.8px) rotateY(540deg) rotateX(127.38deg);
+    transform: translateY(361.8px) rotateY(540deg) rotateX(127.38deg);
+}
+
+.icosa-3d .side:nth-child(8) {
+    -webkit-transform: translateY(361.8px) rotateY(612deg) rotateX(127.38deg);
+    transform: translateY(361.8px) rotateY(612deg) rotateX(127.38deg);
+}
+
+.icosa-3d .side:nth-child(9) {
+    -webkit-transform: translateY(361.8px) rotateY(684deg) rotateX(127.38deg);
+    transform: translateY(361.8px) rotateY(684deg) rotateX(127.38deg);
+}
+
+.icosa-3d .side:nth-child(10) {
+    -webkit-transform: translateY(361.8px) rotateY(756deg) rotateX(127.38deg);
+    transform: translateY(361.8px) rotateY(756deg) rotateX(127.38deg);
+}
+
+.icosa-3d .side:nth-child(11) {
+    -webkit-transform: translateY(86.6px) rotateY(828deg) translateZ(170.1px) rotateX(-10.81deg);
+    transform: translateY(86.6px) rotateY(828deg) translateZ(170.1px) rotateX(-10.81deg);
+}
+
+.icosa-3d .side:nth-child(12) {
+    -webkit-transform: translateY(86.6px) rotateY(900deg) translateZ(170.1px) rotateX(-10.81deg);
+    transform: translateY(86.6px) rotateY(900deg) translateZ(170.1px) rotateX(-10.81deg);
+}
+
+.icosa-3d .side:nth-child(13) {
+    -webkit-transform: translateY(86.6px) rotateY(972deg) translateZ(170.1px) rotateX(-10.81deg);
+    transform: translateY(86.6px) rotateY(972deg) translateZ(170.1px) rotateX(-10.81deg);
+}
+
+.icosa-3d .side:nth-child(14) {
+    -webkit-transform: translateY(86.6px) rotateY(1044deg) translateZ(170.1px) rotateX(-10.81deg);
+    transform: translateY(86.6px) rotateY(1044deg) translateZ(170.1px) rotateX(-10.81deg);
+}
+
+.icosa-3d .side:nth-child(15) {
+    -webkit-transform: translateY(86.6px) rotateY(1116deg) translateZ(170.1px) rotateX(-10.81deg);
+    transform: translateY(86.6px) rotateY(1116deg) translateZ(170.1px) rotateX(-10.81deg);
+}
+
+.icosa-3d .side:nth-child(16) {
+    -webkit-transform: translateY(256.7px) rotateY(1152deg) rotateZ(180deg) translateZ(170.1px) rotateX(-10.81deg);
+    transform: translateY(256.7px) rotateY(1152deg) rotateZ(180deg) translateZ(170.1px) rotateX(-10.81deg);
+}
+
+.icosa-3d .side:nth-child(17) {
+    -webkit-transform: translateY(256.7px) rotateY(1224deg) rotateZ(180deg) translateZ(170.1px) rotateX(-10.81deg);
+    transform: translateY(256.7px) rotateY(1224deg) rotateZ(180deg) translateZ(170.1px) rotateX(-10.81deg);
+}
+
+.icosa-3d .side:nth-child(18) {
+    -webkit-transform: translateY(256.7px) rotateY(1296deg) rotateZ(180deg) translateZ(170.1px) rotateX(-10.81deg);
+    transform: translateY(256.7px) rotateY(1296deg) rotateZ(180deg) translateZ(170.1px) rotateX(-10.81deg);
+}
+
+.icosa-3d .side:nth-child(19) {
+    -webkit-transform: translateY(256.7px) rotateY(1368deg) rotateZ(180deg) translateZ(170.1px) rotateX(-10.81deg);
+    transform: translateY(256.7px) rotateY(1368deg) rotateZ(180deg) translateZ(170.1px) rotateX(-10.81deg);
+    ;
+}
+
+.icosa-3d .side:nth-child(20) {
+    -webkit-transform: translateY(256.7px) rotateY(1440deg) rotateZ(180deg) translateZ(170.1px) rotateX(-10.81deg);
+    transform: translateY(256.7px) rotateY(1440deg) rotateZ(180deg) translateZ(170.1px) rotateX(-10.81deg);
+}
+
+/*  */
+/* END 3D-ICOSA */
+/*  */
 
 #down-arrow {
     width: 16%;
