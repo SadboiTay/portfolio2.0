@@ -116,7 +116,7 @@ $('.nav-links').click(() => {
 // QUOTES ANIMATIONS
 //
 
-console.log(`poly is ${document.querySelector('#q3-polygon-1').getTotalLength()}`)
+// console.log(`poly is ${document.querySelector('#q3-polygon-1').getTotalLength()}`)
 
 // Q1 timeline
 const quote1Tl = gsap.timeline();
