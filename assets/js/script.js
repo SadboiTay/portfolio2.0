@@ -68,10 +68,10 @@ menuPageTL
         stagger: 0.1,
         duration: 0.3,
         opacity: 0,
-        x: '200px',
+        x: '50vw',
         scale: 0,
         ease: 'back'
-    }, '>-0.2')
+    }, '>-0.5')
 
 const animateMenuPage = async () => {
     // ternary operator - if reversed, play; else reverse
